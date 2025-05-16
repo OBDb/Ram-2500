@@ -1,0 +1,24 @@
+command_id: 7E0.016C
+can_id_format: ELEVEN_BIT
+extended_addressing_enabled: false
+test_cases:
+- response: 7E807416C03D6D60000
+  expected_values:
+    CTAC_A_SUP: 1
+    CTAC_B_SUP: 0
+    RTP_A_SUP: 1
+    RTP_B_SUP: 0
+    TAC_A_CMD: 83.92157
+    TAC_B_CMD: 0
+    TP_A_REL: 83.92157
+    TP_B_REL: 0
+- response: 7E807416C03E6E50000
+  expected_values:
+    CTAC_A_SUP: 1
+    CTAC_B_SUP: 0
+    RTP_A_SUP: 1
+    RTP_B_SUP: 0
+    TAC_A_CMD: 90.19608
+    TAC_B_CMD: 0
+    TP_A_REL: 89.80392
+    TP_B_REL: 0
