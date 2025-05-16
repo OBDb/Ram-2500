@@ -1,10 +1,10 @@
-command_id: 7E0.012F
+command_id: 7E0.010C
 can_id_format: ELEVEN_BIT
 extended_addressing_enabled: false
 test_cases:
-- response: 7E803412F42
+- response: 7E804410C0AE5
   expected_values:
-    FLI: 25.88235
-- response: 7E803412F9E
+    RPM: 697.25
+- response: 7E804410C1485
   expected_values:
-    FLI: 61.96078
+    RPM: 1313.25
