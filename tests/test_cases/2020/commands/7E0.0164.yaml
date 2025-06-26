@@ -1,9 +1,9 @@
 command_id: 7E0.0164
 test_cases:
-- response: 7E8074164B5D6B5EFB5
-  expected_values:
+- expected_values:
     TQ_MAX1: 56
     TQ_MAX2: 89
     TQ_MAX3: 56
     TQ_MAX4: 114
     TQ_MAX5: 56
+  response: 7E8074164B5D6B5EFB5
