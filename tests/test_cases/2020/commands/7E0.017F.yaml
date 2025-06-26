@@ -1,24 +1,24 @@
 command_id: 7E0.017F
 test_cases:
-- response: |-
-    7E8100F417F070056B0
-    7E8211D0007AAB30000
-    7E82200000000000000
-  expected_values:
+- expected_values:
     IDLE_TIME: 502451
     IDLE_TIME_SUP: 1
     PTO_TIME: 0
     PTO_TIME_SUP: 1
     RUN_TIME: 5681181
     RUN_TIME_SUP: 1
-- response: |-
+  response: |-
     7E8100F417F070056B0
-    7E821C80007AADD0000
+    7E8211D0007AAB30000
     7E82200000000000000
-  expected_values:
+- expected_values:
     IDLE_TIME: 502493
     IDLE_TIME_SUP: 1
     PTO_TIME: 0
     PTO_TIME_SUP: 1
     RUN_TIME: 5681352
     RUN_TIME_SUP: 1
+  response: |-
+    7E8100F417F070056B0
+    7E821C80007AADD0000
+    7E82200000000000000

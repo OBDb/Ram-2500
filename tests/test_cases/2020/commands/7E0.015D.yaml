@@ -1,8 +1,8 @@
 command_id: 7E0.015D
 test_cases:
-- response: 7E804415D66C0
-  expected_values:
+- expected_values:
     FUEL_TIMING: -210
-- response: 7E804415D6708
-  expected_values:
+  response: 7E804415D66C0
+- expected_values:
     FUEL_TIMING: -210
+  response: 7E804415D6708
