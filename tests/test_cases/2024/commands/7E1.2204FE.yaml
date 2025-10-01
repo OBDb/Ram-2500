@@ -1,0 +1,14 @@
+command_id: 7E1.2204FE
+test_cases:
+- expected_values:
+    RAM_ATF_T: 66.2
+  response: 7E9066204FE3B3A3B
+- expected_values:
+    RAM_ATF_T: 168.8
+  response: 7E9066204FE747475
+- expected_values:
+    RAM_ATF_T: 172.4
+  response: 7E9066204FE767374
+- expected_values:
+    RAM_ATF_T: 172.4
+  response: 7E9066204FE767575
