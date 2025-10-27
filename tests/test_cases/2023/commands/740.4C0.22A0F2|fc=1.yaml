@@ -1,0 +1,32 @@
+command_id: 740.4C0.22A0F2|fc=1
+test_cases:
+- expected_values:
+    RAM_TP_FR_V3: 6.766
+    RAM_TT_FR_V2: 163
+  response: |-
+    4C0100C62A0F211D500
+    4C0210049605D0E0E00
+- expected_values:
+    RAM_TP_FR_V3: 6.766
+    RAM_TT_FR_V2: 163
+  response: |-
+    4C0100C62A0F211D500
+    4C021004CB05E404000
+- expected_values:
+    RAM_TP_FR_V3: 6.766
+    RAM_TT_FR_V2: 191
+  response: |-
+    4C0100C62A0F211F100
+    4C021004CB05EA6A600
+- expected_values:
+    RAM_TP_FR_V3: 6.766
+    RAM_TT_FR_V2: 191
+  response: |-
+    4C0100C62A0F211F100
+    4C021004CC05D7B7B00
+- expected_values:
+    RAM_TP_FR_V3: 6.766
+    RAM_TT_FR_V2: 201
+  response: |-
+    4C0100C62A0F211FB00
+    4C021004CB05DEAEA00

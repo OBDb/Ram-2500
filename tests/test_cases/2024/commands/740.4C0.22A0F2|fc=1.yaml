@@ -1,0 +1,92 @@
+command_id: 740.4C0.22A0F2|fc=1
+test_cases:
+- expected_values:
+    RAM_TP_FR_V3: 3.98
+    RAM_TT_FR_V2: 85
+  response: |-
+    4C0100C62A0F20A8700
+    4C0210042605D0E0E00
+- expected_values:
+    RAM_TP_FR_V3: 4.378
+    RAM_TT_FR_V2: -38
+  response: |-
+    4C0100C62A0F20B0C00
+    4C021003EB05DD7D700
+- expected_values:
+    RAM_TP_FR_V3: 4.378
+    RAM_TT_FR_V2: -11
+  response: |-
+    4C0100C62A0F20B2700
+    4C021003FC05EC0C000
+- expected_values:
+    RAM_TP_FR_V3: 4.378
+    RAM_TT_FR_V2: 17
+  response: |-
+    4C0100C62A0F20B4300
+    4C021003FB05DCFCF00
+- expected_values:
+    RAM_TP_FR_V3: 4.378
+    RAM_TT_FR_V2: 17
+  response: |-
+    4C0100C62A0F20B4300
+    4C0210041C25DCCCC00
+- expected_values:
+    RAM_TP_FR_V3: 4.378
+    RAM_TT_FR_V2: 22
+  response: |-
+    4C0100C62A0F20B4800
+    4C0210050605D0E0E00
+- expected_values:
+    RAM_TP_FR_V3: 4.378
+    RAM_TT_FR_V2: 144
+  response: |-
+    4C0100C62A0F20BC200
+    4C0210049C05F303000
+- expected_values:
+    RAM_TP_FR_V3: 4.378
+    RAM_TT_FR_V2: 154
+  response: |-
+    4C0100C62A0F20BCC00
+    4C0210049C05EEFEF00
+- expected_values:
+    RAM_TP_FR_V3: 4.776
+    RAM_TT_FR_V2: -47
+  response: |-
+    4C0100C62A0F20C0300
+    4C021004BC05CE6E600
+- expected_values:
+    RAM_TP_FR_V3: 4.776
+    RAM_TT_FR_V2: -32
+  response: |-
+    4C0100C62A0F20C1200
+    4C0210057B05C020200
+- expected_values:
+    RAM_TP_FR_V3: 4.776
+    RAM_TT_FR_V2: 8
+  response: |-
+    4C0100C62A0F20C3A00
+    4C0210051C05F767600
+- expected_values:
+    RAM_TP_FR_V3: 4.776
+    RAM_TT_FR_V2: 183
+  response: |-
+    4C0100C62A0F20CE900
+    4C021005FF05C2E2E00
+- expected_values:
+    RAM_TP_FR_V3: 4.776
+    RAM_TT_FR_V2: 193
+  response: |-
+    4C0100C62A0F20CF300
+    4C021005BF05C2E2E00
+- expected_values:
+    RAM_TP_FR_V3: 5.174
+    RAM_TT_FR_V2: -45
+  response: |-
+    4C0100C62A0F20D0500
+    4C021005FF05C2E2E00
+- expected_values:
+    RAM_TP_FR_V3: 5.174
+    RAM_TT_FR_V2: -45
+  response: |-
+    4C0100C62A0F20D0500
+    4C0210060F05C2E2E00
