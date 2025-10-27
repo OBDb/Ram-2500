@@ -1,0 +1,17 @@
+command_id: 7E1.225503|fc=1
+test_cases:
+- expected_values:
+    RAM_GEAR: '1'
+  response: '7E90462550301'
+- expected_values:
+    RAM_GEAR: '2'
+  response: '7E90462550302'
+- expected_values:
+    RAM_GEAR: '8'
+  response: '7E90462550308'
+- expected_values:
+    RAM_GEAR: REAR
+  response: 7E9046255030B
+- expected_values:
+    RAM_GEAR: PARK
+  response: 7E9046255030D
