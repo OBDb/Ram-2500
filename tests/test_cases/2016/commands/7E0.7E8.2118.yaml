@@ -1,0 +1,5 @@
+command_id: 7E0.7E8.2118
+test_cases:
+- expected_values:
+    RAM_ATF_T_V3: 92.92188
+  response: 7E8056118173B84
