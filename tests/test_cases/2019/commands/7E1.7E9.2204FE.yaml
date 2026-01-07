@@ -4,5 +4,5 @@ test_cases:
     RAM_ATF_T: 127.4
   response: 7E9066204FE5D5C5B
 - expected_values:
-    RAM_ATF_T: 149
-  response: 7E9066204FE696968
+    RAM_ATF_T: 165.2
+  response: 7E9066204FE72706F
