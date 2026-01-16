@@ -1,0 +1,8 @@
+command_id: 740.4C0.22A0F1|fc=1
+test_cases:
+- expected_values:
+    RAM_TP_FL_V3: 8.358
+    RAM_TT_FL_V2: 22
+  response: |-
+    4C0100C62A0F1154800
+    4C0210049F05C2C2C00

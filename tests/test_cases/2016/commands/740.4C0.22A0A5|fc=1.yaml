@@ -6,3 +6,9 @@ test_cases:
     RAM_TP_RL_VALID: 0
     RAM_TP_RR_VALID: 0
   response: 4C00462A0A500
+- expected_values:
+    RAM_TP_FL_VALID: 1
+    RAM_TP_FR_VALID: 1
+    RAM_TP_RL_VALID: 1
+    RAM_TP_RR_VALID: 1
+  response: 4C00462A0A50F
