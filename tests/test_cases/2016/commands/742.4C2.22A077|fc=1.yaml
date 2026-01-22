@@ -51,3 +51,10 @@ test_cases:
   response: |-
     4C2100B62A07726C003
     4C2214543FF45FFC003
+- expected_values:
+    RAM_TP_FL: 80
+    RAM_TP_FR: 75
+    RAM_TP_RR: 74
+  response: |-
+    4C2100B62A07726C003
+    4C221504BFF4AFFC003
