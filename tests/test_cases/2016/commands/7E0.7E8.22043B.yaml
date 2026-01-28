@@ -12,3 +12,6 @@ test_cases:
 - expected_values:
     RAM_ODO: 248340.48
   response: 7E80562043B766B
+- expected_values:
+    RAM_ODO: 248348.672
+  response: 7E80562043B766C
