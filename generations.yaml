@@ -1,3 +1,6 @@
+references:
+  - "https://en.wikipedia.org/wiki/Ram_Truck"
+
 generations:
   - name: "Fourth Generation"
     start_year: 2010
