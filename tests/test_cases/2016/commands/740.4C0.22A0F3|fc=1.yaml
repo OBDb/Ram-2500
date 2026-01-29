@@ -8,10 +8,10 @@ test_cases:
     4C0210033B25C222200
 - expected_values:
     RAM_TP_RR_V3: 3.582
-    RAM_TT_RR_V2: -31
+    RAM_TT_RR_V2: -41
   response: |-
-    4C0100C62A0F3091300
-    4C0210035C05C222200
+    4C0100C62A0F3090900
+    4C0210036C05C1A1A00
 - expected_values:
     RAM_TP_RR_V3: 3.582
     RAM_TT_RR_V2: 86
