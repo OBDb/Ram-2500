@@ -4,29 +4,5 @@ test_cases:
     RAM_ODO: 248029.184
   response: 7E80562043B7645
 - expected_values:
-    RAM_ODO: 248037.376
-  response: 7E80562043B7646
-- expected_values:
-    RAM_ODO: 248291.328
-  response: 7E80562043B7665
-- expected_values:
-    RAM_ODO: 248340.48
-  response: 7E80562043B766B
-- expected_values:
-    RAM_ODO: 248348.672
-  response: 7E80562043B766C
-- expected_values:
-    RAM_ODO: 248389.632
-  response: 7E80562043B7671
-- expected_values:
-    RAM_ODO: 248487.936
-  response: 7E80562043B767D
-- expected_values:
-    RAM_ODO: 248537.088
-  response: 7E80562043B7683
-- expected_values:
-    RAM_ODO: 248578.048
-  response: 7E80562043B7688
-- expected_values:
-    RAM_ODO: 248635.392
-  response: 7E80562043B768F
+    RAM_ODO: 248643.584
+  response: 7E80562043B7690

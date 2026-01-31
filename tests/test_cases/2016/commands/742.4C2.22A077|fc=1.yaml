@@ -46,11 +46,11 @@ test_cases:
     4C2214E4CFF4CFFC003
 - expected_values:
     RAM_TP_FL: 68
-    RAM_TP_FR: 70
-    RAM_TP_RR: 71
+    RAM_TP_FR: 68
+    RAM_TP_RR: 68
   response: |-
     4C2100B62A07726C003
-    4C2214446FF47FFC003
+    4C2214444FF44FFC003
 - expected_values:
     RAM_TP_FL: 80
     RAM_TP_FR: 75
