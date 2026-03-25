@@ -1,0 +1,5 @@
+command_id: DAC7.C7.220127
+test_cases:
+- expected_values:
+    RAM_TID_RR: 1426750778
+  response: 18DAF1C707620127550A7D3A

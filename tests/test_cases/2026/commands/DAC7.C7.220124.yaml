@@ -1,0 +1,5 @@
+command_id: DAC7.C7.220124
+test_cases:
+- expected_values:
+    RAM_TID_FR: 1426749138
+  response: 18DAF1C707620124550A76D2
