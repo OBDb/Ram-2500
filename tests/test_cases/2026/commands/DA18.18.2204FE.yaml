@@ -1,0 +1,32 @@
+command_id: DA18.18.2204FE
+test_cases:
+- expected_values:
+    RAM_ATF_T_4THGEN: 39
+  response: |-
+    18DAF11004411F026D
+    18DAF118066204FE4F535B
+- expected_values:
+    RAM_ATF_T_4THGEN: 33
+  response: |-
+    18DAF118066204FE494C54
+    18DAF118024700
+- expected_values:
+    RAM_ATF_T_4THGEN: 34
+  response: 18DAF118066204FE4A4D55
+- expected_values:
+    RAM_ATF_T_4THGEN: 34
+  response: 18DAF118066204FE4A4D56
+- expected_values:
+    RAM_ATF_T_4THGEN: 34
+  response: 18DAF118066204FE4A4E56
+- expected_values:
+    RAM_ATF_T_4THGEN: 35
+  response: 18DAF118066204FE4B4E57
+- expected_values:
+    RAM_ATF_T_4THGEN: 35
+  response: 18DAF118066204FE4B4F57
+- expected_values:
+    RAM_ATF_T_4THGEN: 35
+  response: |-
+    18DAF118066204FE4B4F57
+    18DAF11803410D00

@@ -1,5 +1,8 @@
 command_id: 7E0.0163
 test_cases:
 - expected_values:
+    TQ_REF: 582
+  response: '7E80441630246'
+- expected_values:
     TQ_REF: 1085
   response: 7E8044163043D

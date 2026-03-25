@@ -1,0 +1,20 @@
+command_id: DAC7.C7.220302
+test_cases:
+- expected_values:
+    RAM_DRIVER_DOOR_OPEN: 0
+    RAM_PASSENGER_DOOR_OPEN: 0
+    RAM_RLD_OPEN: 0
+    RAM_RRD_OPEN: 0
+    RAM_TRUNK_OPEN: 0
+  response: |-
+    18DAF1C710086203020000EF
+    18DAF1C7210000
+- expected_values:
+    RAM_DRIVER_DOOR_OPEN: 0
+    RAM_PASSENGER_DOOR_OPEN: 0
+    RAM_RLD_OPEN: 0
+    RAM_RRD_OPEN: 0
+    RAM_TRUNK_OPEN: 0
+  response: |-
+    18DAF1C710086203020000F0
+    18DAF1C7210000
