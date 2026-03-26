@@ -1,18 +1,54 @@
 command_id: DA10.10.221002|din=03
 test_cases:
 - expected_values:
+    RAM_ENGINE_STATUS: 118
+  response: |-
+    18DAF11003412F83
+    18DAF110056210020076
+- expected_values:
+    RAM_ENGINE_STATUS: 53
+  response: |-
+    18DAF11003415A28
+    18DAF110056210020035
+- expected_values:
+    RAM_ENGINE_STATUS: 60
+  response: |-
+    18DAF11004411F00F5
+    18DAF11005621002003C
+    18DAF11003415A26
+- expected_values:
     RAM_ENGINE_STATUS: 0
   response: 18DAF110056210020000
 - expected_values:
     RAM_ENGINE_STATUS: 0
   response: |-
     18DAF110056210020000
-    18DAF11003415A00
+    18DAF1100341042F
+- expected_values:
+    RAM_ENGINE_STATUS: 0
+  response: |-
+    18DAF110056210020000
+    18DAF110100F417F07000291
+    18DAF1102149000051A70000
+    18DAF110220000
+- expected_values:
+    RAM_ENGINE_STATUS: 15
+  response: |-
+    18DAF11005621002000F
+    18DAF11004411F0061
 - expected_values:
     RAM_ENGINE_STATUS: 17
   response: |-
     18DAF110056210020011
     18DAF11003412F95
+- expected_values:
+    RAM_ENGINE_STATUS: 116
+  response: 18DAF110056210020074
+- expected_values:
+    RAM_ENGINE_STATUS: 120
+  response: |-
+    18DAF110056210020078
+    18DAF11004411F016E
 - expected_values:
     RAM_ENGINE_STATUS: 0
   response: |-
