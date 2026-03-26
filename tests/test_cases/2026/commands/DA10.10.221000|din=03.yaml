@@ -1,26 +1,49 @@
 command_id: DA10.10.221000|din=03
 test_cases:
 - expected_values:
+    RAM_RPM_ECU: 1640
+  response: |-
+    18DAF11004411F010F
+    18DAF1100562100019A0
+    18DAF1100441310E03
+- expected_values:
+    RAM_RPM_ECU: 0
+  response: 18DAF110056210000000
+- expected_values:
     RAM_RPM_ECU: 0
   response: |-
     18DAF110056210000000
     18DAF11003410F54
 - expected_values:
-    RAM_RPM_ECU: 699
-  response: 18DAF110056210000AEC
-- expected_values:
-    RAM_RPM_ECU: 700
-  response: 18DAF110056210000AF0
-- expected_values:
     RAM_RPM_ECU: 701
   response: 18DAF110056210000AF4
 - expected_values:
-    RAM_RPM_ECU: 1220
-  response: 18DAF110056210001310
+    RAM_RPM_ECU: 701
+  response: |-
+    18DAF110056210000AF4
+    18DAF11004410C0AF1
+- expected_values:
+    RAM_RPM_ECU: 1302
+  response: |-
+    18DAF110056210001458
+    18DAF11006419D004E004E
+- expected_values:
+    RAM_RPM_ECU: 1679
+  response: 18DAF110056210001A3C
+- expected_values:
+    RAM_RPM_ECU: 1726
+  response: |-
+    18DAF110056210001AF8
+    18DAF11004410C1B46
 - expected_values:
     RAM_RPM_ECU: 699
   response: |-
     18DAF11006419D001F001F
+    18DAF110056210000AEC
+- expected_values:
+    RAM_RPM_ECU: 699
+  response: |-
+    18DAF11006419D00270027
     18DAF110056210000AEC
 - expected_values:
     RAM_RPM_ECU: 699
