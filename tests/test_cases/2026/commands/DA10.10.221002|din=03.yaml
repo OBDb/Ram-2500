@@ -9,6 +9,11 @@ test_cases:
     18DAF110056210020000
     18DAF11003415A00
 - expected_values:
+    RAM_ENGINE_STATUS: 17
+  response: |-
+    18DAF110056210020011
+    18DAF11003412F95
+- expected_values:
     RAM_ENGINE_STATUS: 0
   response: |-
     18DAF110220000

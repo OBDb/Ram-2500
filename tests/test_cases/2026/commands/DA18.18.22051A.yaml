@@ -1,0 +1,6 @@
+command_id: DA18.18.22051A
+test_cases:
+- expected_values:
+    RAM_GEAR_CURRENT: 2
+    RAM_GEAR_DESIRED: 2
+  response: 18DAF1180462051A22
