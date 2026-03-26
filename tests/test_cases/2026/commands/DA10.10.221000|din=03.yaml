@@ -15,6 +15,9 @@ test_cases:
     RAM_RPM_ECU: 701
   response: 18DAF110056210000AF4
 - expected_values:
+    RAM_RPM_ECU: 1220
+  response: 18DAF110056210001310
+- expected_values:
     RAM_RPM_ECU: 699
   response: |-
     18DAF11006419D001F001F

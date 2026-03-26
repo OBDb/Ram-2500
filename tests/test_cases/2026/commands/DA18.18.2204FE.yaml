@@ -6,6 +6,11 @@ test_cases:
     18DAF11004411F026D
     18DAF118066204FE4F535B
 - expected_values:
+    RAM_ATF_T_4THGEN: 20
+  response: |-
+    18DAF118066204FE3C3F47
+    18DAF1180441310DD5
+- expected_values:
     RAM_ATF_T_4THGEN: 33
   response: |-
     18DAF118066204FE494C54
