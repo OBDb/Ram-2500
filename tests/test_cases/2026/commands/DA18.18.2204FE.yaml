@@ -21,6 +21,16 @@ test_cases:
     18DAF11006419D00280028
     18DAF118066204FE41444C
 - expected_values:
+    RAM_ATF_T_4THGEN: 69
+  response: |-
+    18DAF118024700
+    18DAF118066204FE6D727A
+- expected_values:
+    RAM_ATF_T_4THGEN: 70
+  response: |-
+    18DAF118024700
+    18DAF118066204FE6E717A
+- expected_values:
     RAM_ATF_T_4THGEN: 20
   response: |-
     18DAF118066204FE3C3F47
@@ -59,8 +69,13 @@ test_cases:
     18DAF118066204FE696D76
     18DAF118024700
 - expected_values:
-    RAM_ATF_T_4THGEN: 65
-  response: 18DAF118066204FE696E76
+    RAM_ATF_T_4THGEN: 69
+  response: 18DAF118066204FE6D7179
 - expected_values:
-    RAM_ATF_T_4THGEN: 67
-  response: 18DAF118066204FE6B6F76
+    RAM_ATF_T_4THGEN: 69
+  response: |-
+    18DAF118066204FE6D7179
+    18DAF11803410D77
+- expected_values:
+    RAM_ATF_T_4THGEN: 70
+  response: 18DAF118066204FE6E7078

@@ -10,6 +10,18 @@ test_cases:
     RAM_GEAR_CURRENT: 8
     RAM_GEAR_DESIRED: 8
   response: |-
+    18DAF11004411F00BA
+    18DAF1180462051A88
+- expected_values:
+    RAM_GEAR_CURRENT: 8
+    RAM_GEAR_DESIRED: 8
+  response: |-
+    18DAF11004411F00D9
+    18DAF1180462051A88
+- expected_values:
+    RAM_GEAR_CURRENT: 8
+    RAM_GEAR_DESIRED: 8
+  response: |-
     18DAF11004411F0182
     18DAF1180462051A88
     18DAF11803410D79
@@ -30,6 +42,12 @@ test_cases:
     RAM_GEAR_DESIRED: 2
   response: 18DAF1180462051A22
 - expected_values:
+    RAM_GEAR_CURRENT: 2
+    RAM_GEAR_DESIRED: 3
+  response: |-
+    18DAF1180462051A32
+    18DAF11804410C19C0
+- expected_values:
     RAM_GEAR_CURRENT: 3
     RAM_GEAR_DESIRED: 3
   response: |-
@@ -41,12 +59,6 @@ test_cases:
   response: |-
     18DAF1180462051A33
     18DAF11803410D0D
-- expected_values:
-    RAM_GEAR_CURRENT: 3
-    RAM_GEAR_DESIRED: 3
-  response: |-
-    18DAF1180462051A33
-    18DAF11804410C18A4
 - expected_values:
     RAM_GEAR_CURRENT: 7
     RAM_GEAR_DESIRED: 7
@@ -62,10 +74,16 @@ test_cases:
     RAM_GEAR_DESIRED: 8
   response: |-
     18DAF1180462051A88
-    18DAF11803410D75
+    18DAF118024700
 - expected_values:
     RAM_GEAR_CURRENT: 8
     RAM_GEAR_DESIRED: 8
   response: |-
     18DAF1180462051A88
-    18DAF11804410C18E0
+    18DAF11803410D72
+- expected_values:
+    RAM_GEAR_CURRENT: 8
+    RAM_GEAR_DESIRED: 8
+  response: |-
+    18DAF1180462051A88
+    18DAF1180441310E46
