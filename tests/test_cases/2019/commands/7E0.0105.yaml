@@ -16,6 +16,9 @@ test_cases:
     ECT: 99
   response: 7E80341058B
 - expected_values:
+    ECT: 100
+  response: 7E80341058C
+- expected_values:
     ECT: 103
   response: 7E80341058F
 - expected_values:
