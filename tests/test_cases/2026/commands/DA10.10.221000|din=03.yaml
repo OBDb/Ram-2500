@@ -1,6 +1,11 @@
 command_id: DA10.10.221000|din=03
 test_cases:
 - expected_values:
+    RAM_RPM_ECU: 698
+  response: |-
+    18DAF11003410D00
+    18DAF110056210000AE8
+- expected_values:
     RAM_RPM_ECU: 1647
   response: |-
     18DAF11003412F70
@@ -95,7 +100,7 @@ test_cases:
     18DAF11021003E00000000
     18DAF110056210000AEC
 - expected_values:
-    RAM_RPM_ECU: 698
+    RAM_RPM_ECU: 1377
   response: |-
-    18DAF11021003E00000000
-    18DAF110056210000AE8
+    18DAF11021002600000000
+    18DAF110056210001584

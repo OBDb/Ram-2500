@@ -16,6 +16,11 @@ test_cases:
     18DAF11004410C19B0
     18DAF140046210048B
 - expected_values:
+    RAM_BATT_V_BCM: 14.2
+  response: |-
+    18DAF110220000
+    18DAF140046210048E
+- expected_values:
     RAM_BATT_V_BCM: 13.9
   response: |-
     18DAF1180341043F
@@ -26,8 +31,8 @@ test_cases:
     18DAF11804410C1B1C
     18DAF140046210048D
 - expected_values:
-    RAM_BATT_V_BCM: 13.3
-  response: 18DAF1400462100485
+    RAM_BATT_V_BCM: 13.1
+  response: 18DAF1400462100483
 - expected_values:
     RAM_BATT_V_BCM: 14.4
   response: 18DAF1400462100490
