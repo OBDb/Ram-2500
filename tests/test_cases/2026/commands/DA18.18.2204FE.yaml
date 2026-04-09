@@ -56,8 +56,8 @@ test_cases:
 - expected_values:
     RAM_ATF_T_4THGEN: 35
   response: |-
-    18DAF118066204FE4B4F57
-    18DAF11803410D00
+    18DAF118066204FE4B4E57
+    18DAF11803410D12
 - expected_values:
     RAM_ATF_T_4THGEN: 60
   response: |-
