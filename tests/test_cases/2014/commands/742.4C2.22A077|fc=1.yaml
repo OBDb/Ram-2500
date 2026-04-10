@@ -1,13 +1,21 @@
 command_id: 742.4C2.22A077|fc=1
 test_cases:
 - expected_values:
-    RAM_TP_FL: 86
-    RAM_TP_FR: 86
+    RAM_TP_FL: 84
+    RAM_TP_FR: 81
     RAM_TP_RL: 84
-    RAM_TP_RR: 83
+    RAM_TP_RR: 81
   response: |-
     4C2100B62A077200003
-    4C22156565453FF0003
+    4C22154515451FF0003
+- expected_values:
+    RAM_TP_FL: 84
+    RAM_TP_FR: 82
+    RAM_TP_RL: 84
+    RAM_TP_RR: 80
+  response: |-
+    4C2100B62A077200003
+    4C22154525450FF0003
 - expected_values:
     RAM_TP_FL: 69
     RAM_TP_FR: 69
