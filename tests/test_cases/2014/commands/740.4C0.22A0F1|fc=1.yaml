@@ -29,7 +29,7 @@ test_cases:
     RAM_TT_FL_V2: -43
   response: |-
     4C0100C62A0F1170700
-    4C021004EB05D5B5B00
+    4C021004DB05D878700
 - expected_values:
     RAM_TP_FL_V3: 9.154
     RAM_TT_FL_V2: -43
