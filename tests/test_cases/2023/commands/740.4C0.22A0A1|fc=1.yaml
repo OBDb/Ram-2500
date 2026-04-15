@@ -16,3 +16,11 @@ test_cases:
   response: |-
     4C0100B62A0A1434242
     4C02143FFFFFF634242
+- expected_values:
+    RAM_TP_FL_AC: 68
+    RAM_TP_FR_AC: 66
+    RAM_TP_RL_AC: 68
+    RAM_TP_RR_AC: 62
+  response: |-
+    4C0100B62A0A144423E
+    4C02144FFFFFF64423E
