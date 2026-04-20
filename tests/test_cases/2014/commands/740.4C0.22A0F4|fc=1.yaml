@@ -65,7 +65,7 @@ test_cases:
     RAM_TT_RL_V2: 131
   response: |-
     4C0100C62A0F416B500
-    4C0210051C15C2A2A00
+    4C0210050F05C2E2E00
 - expected_values:
     RAM_TP_RL_V3: 9.154
     RAM_TT_RL_V2: -50
