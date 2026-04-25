@@ -33,13 +33,13 @@ test_cases:
     4C2100B62A077200003
     4C22150504F4EFF0003
 - expected_values:
-    RAM_TP_FL: 81
+    RAM_TP_FL: 80
     RAM_TP_FR: 80
     RAM_TP_RL: 80
     RAM_TP_RR: 78
   response: |-
     4C2100B62A077200003
-    4C2215150504EFF0003
+    4C2215050504EFF0003
 - expected_values:
     RAM_TP_FL: 81
     RAM_TP_FR: 80
