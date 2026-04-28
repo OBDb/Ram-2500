@@ -19,11 +19,11 @@ test_cases:
 - expected_values:
     RAM_TP_FL: 80
     RAM_TP_FR: 79
-    RAM_TP_RL: 79
-    RAM_TP_RR: 78
+    RAM_TP_RL: 78
+    RAM_TP_RR: 77
   response: |-
     4C2100B62A077200003
-    4C221504F4F4EFF0003
+    4C221504F4E4DFF0003
 - expected_values:
     RAM_TP_FL: 80
     RAM_TP_FR: 80
