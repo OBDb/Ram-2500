@@ -56,10 +56,10 @@ test_cases:
     4C0210048B35F000000
 - expected_values:
     RAM_TP_FR_V3: 8.756
-    RAM_TT_FR_V2: 186
+    RAM_TT_FR_V2: 113
   response: |-
-    4C0100C62A0F216EC00
-    4C021004EB05FA3A300
+    4C0100C62A0F216A300
+    4C021004EB05FACAC00
 - expected_values:
     RAM_TP_FR_V3: 9.154
     RAM_TT_FR_V2: 205
