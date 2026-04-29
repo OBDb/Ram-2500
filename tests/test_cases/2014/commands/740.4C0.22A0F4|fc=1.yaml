@@ -35,7 +35,7 @@ test_cases:
     RAM_TT_RL_V2: 39
   response: |-
     4C0100C62A0F4155900
-    4C0210040B05C383800
+    4C0210040B05C212100
 - expected_values:
     RAM_TP_RL_V3: 8.358
     RAM_TT_RL_V2: 177
