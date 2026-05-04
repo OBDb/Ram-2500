@@ -10,6 +10,14 @@ test_cases:
     4C22153535251FF0003
 - expected_values:
     RAM_TP_FL: 79
+    RAM_TP_FR: 78
+    RAM_TP_RL: 78
+    RAM_TP_RR: 77
+  response: |-
+    4C2100B62A077200003
+    4C2214F4E4E4DFF0003
+- expected_values:
+    RAM_TP_FL: 79
     RAM_TP_FR: 79
     RAM_TP_RL: 79
     RAM_TP_RR: 78
@@ -18,12 +26,12 @@ test_cases:
     4C2214F4F4F4EFF0003
 - expected_values:
     RAM_TP_FL: 80
-    RAM_TP_FR: 79
+    RAM_TP_FR: 78
     RAM_TP_RL: 78
     RAM_TP_RR: 77
   response: |-
     4C2100B62A077200003
-    4C221504F4E4DFF0003
+    4C221504E4E4DFF0003
 - expected_values:
     RAM_TP_FL: 80
     RAM_TP_FR: 80
