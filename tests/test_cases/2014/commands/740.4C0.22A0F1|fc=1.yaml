@@ -68,13 +68,13 @@ test_cases:
     4C0210059B05D494900
 - expected_values:
     RAM_TP_FL_V3: 9.552
+    RAM_TT_FL_V2: 41
+  response: |-
+    4C0100C62A0F1185B00
+    4C0210060B05D979700
+- expected_values:
+    RAM_TP_FL_V3: 9.552
     RAM_TT_FL_V2: 86
   response: |-
     4C0100C62A0F1188800
     4C021005FF05C2E2E00
-- expected_values:
-    RAM_TP_FL_V3: 9.552
-    RAM_TT_FL_V2: 114
-  response: |-
-    4C0100C62A0F118A400
-    4C0210061F05C2E2E00
