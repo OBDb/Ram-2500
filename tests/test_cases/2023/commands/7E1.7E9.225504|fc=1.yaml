@@ -4,5 +4,8 @@ test_cases:
     RAM_GEAR_TARGET: '6'
   response: '7E90462550406'
 - expected_values:
+    RAM_GEAR_TARGET: '8'
+  response: '7E90462550408'
+- expected_values:
     RAM_GEAR_TARGET: PARK
   response: 7E9046255040D
