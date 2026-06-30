@@ -54,3 +54,9 @@ test_cases:
   response: |-
     4C0100C62A0F3129600
     4C0210057B05EF7F700
+- expected_values:
+    RAM_TP_RR_V3: 7.164
+    RAM_TT_RR_V2: 127
+  response: |-
+    4C0100C62A0F312B100
+    4C0210062F05C2E2E00
