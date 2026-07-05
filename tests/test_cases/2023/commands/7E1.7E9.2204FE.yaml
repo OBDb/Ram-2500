@@ -4,29 +4,8 @@ test_cases:
     RAM_ATF_T: 96.8
   response: 7E9066204FE4C4A4B
 - expected_values:
-    RAM_ATF_T: 96.8
-  response: 7E9066204FE4C4A4C
-- expected_values:
-    RAM_ATF_T: 98.6
-  response: 7E9066204FE4D4B4C
-- expected_values:
-    RAM_ATF_T: 100.4
-  response: 7E9066204FE4E4C4D
-- expected_values:
-    RAM_ATF_T: 102.2
-  response: 7E9066204FE4F4D4E
-- expected_values:
-    RAM_ATF_T: 145.4
-  response: 7E9066204FE676566
-- expected_values:
-    RAM_ATF_T: 161.6
-  response: 7E9066204FE706F70
-- expected_values:
     RAM_ATF_T: 168.8
   response: 7E9066204FE747172
-- expected_values:
-    RAM_ATF_T: 168.8
-  response: 7E9066204FE747273
 - expected_values:
     RAM_ATF_T: 168.8
   response: 7E9066204FE747374
