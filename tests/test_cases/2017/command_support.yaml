@@ -57,6 +57,7 @@ unsupported_commands_by_ecu:
   "7E1":
   - 7E1.7E9.215C|fc=1:RAM_ATF_T_3RDGEN_V2
   "DA10":
+  - DA10.10.221003|din=03:RAM_ECT_ECU
   - DA10.10.22189B|din=03:RAM_SWIRL_CMD
   - DA10.10.22189F|din=03:RAM_VGT_CMD
   - DA10.10.2218D0|din=03:RAM_MPROP_CMD
