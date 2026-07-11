@@ -1,0 +1,18 @@
+command_id: 740.4C0.22A0A1|fc=1
+test_cases:
+- expected_values:
+    RAM_TP_FL_AC: 60
+    RAM_TP_FR_AC: 60
+    RAM_TP_RL_AC: 64
+    RAM_TP_RR_AC: 63
+  response: |-
+    4C0100B62A0A13C3C3F
+    4C02140FFFFFF643C3F
+- expected_values:
+    RAM_TP_FL_AC: 60
+    RAM_TP_FR_AC: 60
+    RAM_TP_RL_AC: 64
+    RAM_TP_RR_AC: 64
+  response: |-
+    4C0100B62A0A13C3C40
+    4C02140FFFFFF643C40

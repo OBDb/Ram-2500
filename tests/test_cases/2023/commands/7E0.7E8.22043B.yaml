@@ -1,0 +1,20 @@
+command_id: 7E0.7E8.22043B
+test_cases:
+- expected_values:
+    RAM_ODO: 57655.296
+  response: 7E80562043B1B7E
+- expected_values:
+    RAM_ODO: 60219.392
+  response: 7E80562043B1CB7
+- expected_values:
+    RAM_ODO: 60243.968
+  response: 7E80562043B1CBA
+- expected_values:
+    RAM_ODO: 60448.768
+  response: 7E80562043B1CD3
+- expected_values:
+    RAM_ODO: 61030.4
+  response: 7E80562043B1D1A
+- expected_values:
+    RAM_ODO: 61276.16
+  response: 7E80562043B1D38
