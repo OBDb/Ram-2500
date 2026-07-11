@@ -1,0 +1,121 @@
+command_id: DA10.10.221000|din=03
+test_cases:
+- expected_values:
+    RAM_RPM_ECU: 698
+  response: |-
+    18DAF11003410D00
+    18DAF110056210000AE8
+- expected_values:
+    RAM_RPM_ECU: 1647
+  response: |-
+    18DAF11003412F70
+    18DAF1100562100019BC
+    18DAF11003410D75
+- expected_values:
+    RAM_RPM_ECU: 0
+  response: |-
+    18DAF11004411F00CB
+    18DAF110056210000000
+    18DAF11003410D00
+- expected_values:
+    RAM_RPM_ECU: 1655
+  response: |-
+    18DAF11004411F00CB
+    18DAF1100562100019DC
+    18DAF11003410D76
+- expected_values:
+    RAM_RPM_ECU: 1640
+  response: |-
+    18DAF11004411F010F
+    18DAF1100562100019A0
+    18DAF1100441310E03
+- expected_values:
+    RAM_RPM_ECU: 0
+  response: 18DAF110056210000000
+- expected_values:
+    RAM_RPM_ECU: 0
+  response: |-
+    18DAF110056210000000
+    18DAF11003410F54
+- expected_values:
+    RAM_RPM_ECU: 701
+  response: |-
+    18DAF110056210000AF4
+    18DAF11004410C0AF1
+- expected_values:
+    RAM_RPM_ECU: 1138
+  response: |-
+    18DAF1100562100011C8
+    18DAF110024700
+- expected_values:
+    RAM_RPM_ECU: 1140
+  response: |-
+    18DAF1100562100011D0
+    18DAF11004410C11BC
+- expected_values:
+    RAM_RPM_ECU: 1150
+  response: 18DAF1100562100011F8
+- expected_values:
+    RAM_RPM_ECU: 1233
+  response: |-
+    18DAF110056210001344
+    18DAF11003410453
+- expected_values:
+    RAM_RPM_ECU: 1302
+  response: |-
+    18DAF110056210001458
+    18DAF11006419D004E004E
+- expected_values:
+    RAM_RPM_ECU: 1335
+  response: |-
+    18DAF1100562100014DC
+    18DAF1100441310E73
+- expected_values:
+    RAM_RPM_ECU: 1630
+  response: |-
+    18DAF110056210001978
+    18DAF110024700
+- expected_values:
+    RAM_RPM_ECU: 1726
+  response: |-
+    18DAF110056210001AF8
+    18DAF11004410C1B46
+- expected_values:
+    RAM_RPM_ECU: 1739
+  response: |-
+    18DAF110056210001B2C
+    18DAF1100441310E75
+- expected_values:
+    RAM_RPM_ECU: 2388
+  response: 18DAF110056210002550
+- expected_values:
+    RAM_RPM_ECU: 2434
+  response: |-
+    18DAF110056210002608
+    18DAF11006419D015E015E
+- expected_values:
+    RAM_RPM_ECU: 699
+  response: |-
+    18DAF11006419D001F001F
+    18DAF110056210000AEC
+- expected_values:
+    RAM_RPM_ECU: 699
+  response: |-
+    18DAF11006419D00270027
+    18DAF110056210000AEC
+- expected_values:
+    RAM_RPM_ECU: 1642
+  response: |-
+    18DAF11006419D01180118
+    18DAF1100562100019A8
+- expected_values:
+    RAM_RPM_ECU: 699
+  response: |-
+    18DAF110100C418504000000
+    18DAF11021003E00000000
+    18DAF110056210000AEC
+- expected_values:
+    RAM_RPM_ECU: 1377
+  response: |-
+    18DAF11021002600000000
+    18DAF110056210001584
