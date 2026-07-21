@@ -68,6 +68,7 @@ unsupported_commands_by_ecu:
   "7E1":
   - 7E1.7E9.2118|fc=1:RAM_ATF_T_3RDGEN
   - 7E1.7E9.215C|fc=1:RAM_ATF_T_3RDGEN_V2
+  - 7E1.7E9.2204FE:RAM_ATF_T
   - 7E1.7E9.225503|fc=1:RAM_GEAR
   "DA10":
   - DA10.10.2118:RAM_TOT
