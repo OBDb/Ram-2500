@@ -2,6 +2,12 @@ command_id: 740.4C0.22A0F3|fc=1
 test_cases:
 - expected_values:
     RAM_TP_RR_V3: 6.368
+    RAM_TT_RR_V2: 17
+  response: |-
+    4C0100C62A0F3104300
+    4C0210048C05D686800
+- expected_values:
+    RAM_TP_RR_V3: 6.368
     RAM_TT_RR_V2: 144
   response: |-
     4C0100C62A0F310C200
