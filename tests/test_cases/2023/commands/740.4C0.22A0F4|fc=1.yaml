@@ -7,6 +7,12 @@ test_cases:
     4C0100C62A0F4105E00
     4C0210048B05D272700
 - expected_values:
+    RAM_TP_RL_V3: 6.368
+    RAM_TT_RL_V2: 107
+  response: |-
+    4C0100C62A0F4109D00
+    4C021004DB05D878700
+- expected_values:
     RAM_TP_RL_V3: 6.766
     RAM_TT_RL_V2: 136
   response: |-
@@ -18,12 +24,6 @@ test_cases:
   response: |-
     4C0100C62A0F411C400
     4C0210054F05C2E2E00
-- expected_values:
-    RAM_TP_RL_V3: 6.766
-    RAM_TT_RL_V2: 191
-  response: |-
-    4C0100C62A0F411F100
-    4C021004CC05EC8C800
 - expected_values:
     RAM_TP_RL_V3: 6.766
     RAM_TT_RL_V2: 191
