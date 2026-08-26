@@ -1,6 +1,22 @@
 command_id: 740.4C0.22A0A1|fc=1
 test_cases:
 - expected_values:
+    RAM_TP_FL_AC: 67
+    RAM_TP_FR_AC: 64
+    RAM_TP_RL_AC: 62
+    RAM_TP_RR_AC: 66
+  response: |-
+    4C0100B62A0A1434042
+    4C0213EFFFFFF644042
+- expected_values:
+    RAM_TP_FL_AC: 68
+    RAM_TP_FR_AC: 65
+    RAM_TP_RL_AC: 63
+    RAM_TP_RR_AC: 67
+  response: |-
+    4C0100B62A0A1444143
+    4C0213FFFFFFF644143
+- expected_values:
     RAM_TP_FL_AC: 69
     RAM_TP_FR_AC: 76
     RAM_TP_RL_AC: 78
@@ -16,46 +32,6 @@ test_cases:
   response: |-
     4C0100B62A0A1464546
     4C02142FFFFFF004546
-- expected_values:
-    RAM_TP_FL_AC: 70
-    RAM_TP_FR_AC: 69
-    RAM_TP_RL_AC: 66
-    RAM_TP_RR_AC: 70
-  response: |-
-    4C0100B62A0A1464546
-    4C02142FFFFFF644546
-- expected_values:
-    RAM_TP_FL_AC: 70
-    RAM_TP_FR_AC: 69
-    RAM_TP_RL_AC: 67
-    RAM_TP_RR_AC: 70
-  response: |-
-    4C0100B62A0A1464546
-    4C02143FFFFFF634546
-- expected_values:
-    RAM_TP_FL_AC: 70
-    RAM_TP_FR_AC: 69
-    RAM_TP_RL_AC: 67
-    RAM_TP_RR_AC: 70
-  response: |-
-    4C0100B62A0A1464546
-    4C02143FFFFFF644546
-- expected_values:
-    RAM_TP_FL_AC: 72
-    RAM_TP_FR_AC: 75
-    RAM_TP_RL_AC: 79
-    RAM_TP_RR_AC: 78
-  response: |-
-    4C0100B62A0A1484B4E
-    4C0214FFFFFFF634B4E
-- expected_values:
-    RAM_TP_FL_AC: 72
-    RAM_TP_FR_AC: 76
-    RAM_TP_RL_AC: 79
-    RAM_TP_RR_AC: 78
-  response: |-
-    4C0100B62A0A1484C4E
-    4C0214FFFFFFF634C4E
 - expected_values:
     RAM_TP_FL_AC: 72
     RAM_TP_FR_AC: 76
