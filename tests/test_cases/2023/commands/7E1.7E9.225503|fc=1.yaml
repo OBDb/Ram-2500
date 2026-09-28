@@ -1,23 +1,23 @@
 command_id: 7E1.7E9.225503|fc=1
 test_cases:
 - expected_values:
-    RAM_GEAR: '1'
+    RAM2500_GEAR_2: '1'
   response: '7E90462550301'
 - expected_values:
-    RAM_GEAR: '3'
+    RAM2500_GEAR_2: '3'
   response: '7E90462550303'
 - expected_values:
-    RAM_GEAR: '4'
+    RAM2500_GEAR_2: '4'
   response: '7E90462550304'
 - expected_values:
-    RAM_GEAR: '6'
+    RAM2500_GEAR_2: '6'
   response: '7E90462550306'
 - expected_values:
-    RAM_GEAR: '7'
+    RAM2500_GEAR_2: '7'
   response: '7E90462550307'
 - expected_values:
-    RAM_GEAR: '8'
+    RAM2500_GEAR_2: '8'
   response: '7E90462550308'
 - expected_values:
-    RAM_GEAR: PARK
+    RAM2500_GEAR_2: PARK
   response: 7E9046255030D

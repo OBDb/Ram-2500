@@ -1,92 +1,92 @@
 command_id: 740.4C0.22A0F2|fc=1
 test_cases:
 - expected_values:
-    RAM_TP_FR_V3: 5.97
-    RAM_TT_FR_V2: 153
+    RAM2500_TP_FR_F: 404.3
+    RAM2500_TT_FR_F: 24
   response: |-
     4C0100C62A0F20FCB00
     4C0210040F05C2E2E00
 - expected_values:
-    RAM_TP_FR_V3: 8.358
-    RAM_TT_FR_V2: 12
+    RAM2500_TP_FR_F: 543.8
+    RAM2500_TT_FR_F: 23
   response: |-
     4C0100C62A0F2153E00
     4C021003FB05D222200
 - expected_values:
-    RAM_TP_FR_V3: 8.358
-    RAM_TT_FR_V2: 67
+    RAM2500_TP_FR_F: 549.3
+    RAM2500_TT_FR_F: 25
   response: |-
     4C0100C62A0F2157500
     4C0210041B05D5F5F00
 - expected_values:
-    RAM_TP_FR_V3: 8.358
-    RAM_TT_FR_V2: 84
+    RAM2500_TP_FR_F: 551
+    RAM2500_TT_FR_F: 24
   response: |-
     4C0100C62A0F2158600
     4C0210040B05E434300
 - expected_values:
-    RAM_TP_FR_V3: 8.358
-    RAM_TT_FR_V2: 84
+    RAM2500_TP_FR_F: 551
+    RAM2500_TT_FR_F: 25
   response: |-
     4C0100C62A0F2158600
     4C0210041B05EFFFF00
 - expected_values:
-    RAM_TP_FR_V3: 8.358
-    RAM_TT_FR_V2: 122
+    RAM2500_TP_FR_F: 554.8
+    RAM2500_TT_FR_F: 26
   response: |-
     4C0100C62A0F215AC00
     4C0210042C05C010100
 - expected_values:
-    RAM_TP_FR_V3: 8.358
-    RAM_TT_FR_V2: 122
+    RAM2500_TP_FR_F: 554.8
+    RAM2500_TT_FR_F: 26
   response: |-
     4C0100C62A0F215AC00
     4C0210042C35CEEEE00
 - expected_values:
-    RAM_TP_FR_V3: 8.358
-    RAM_TT_FR_V2: 167
+    RAM2500_TP_FR_F: 559.3
+    RAM2500_TT_FR_F: 28
   response: |-
     4C0100C62A0F215D900
     4C0210044B05CE0E000
 - expected_values:
-    RAM_TP_FR_V3: 8.756
-    RAM_TT_FR_V2: -24
+    RAM2500_TP_FR_F: 565.8
+    RAM2500_TT_FR_F: 32
   response: |-
     4C0100C62A0F2161A00
     4C0210048B35F000000
 - expected_values:
-    RAM_TP_FR_V3: 8.756
-    RAM_TT_FR_V2: 113
+    RAM2500_TP_FR_F: 579.5
+    RAM2500_TT_FR_F: 38
   response: |-
     4C0100C62A0F216A300
     4C021004EB05FACAC00
 - expected_values:
-    RAM_TP_FR_V3: 9.154
-    RAM_TT_FR_V2: -50
+    RAM2500_TP_FR_F: 588.8
+    RAM2500_TT_FR_F: 40
   response: |-
     4C0100C62A0F2170000
     4C0210050F05C2E2E00
 - expected_values:
-    RAM_TP_FR_V3: 9.154
-    RAM_TT_FR_V2: 205
+    RAM2500_TP_FR_F: 614.3
+    RAM2500_TT_FR_F: 51
   response: |-
     4C0100C62A0F217FF00
     4C021005BC15C020200
 - expected_values:
-    RAM_TP_FR_V3: 9.552
-    RAM_TT_FR_V2: -41
+    RAM2500_TP_FR_F: 615.3
+    RAM2500_TT_FR_F: 51
   response: |-
     4C0100C62A0F2180900
     4C021005BB05C020200
 - expected_values:
-    RAM_TP_FR_V3: 9.552
-    RAM_TT_FR_V2: 4
+    RAM2500_TP_FR_F: 619.8
+    RAM2500_TT_FR_F: 55
   response: |-
     4C0100C62A0F2183600
     4C021005FF05C2E2E00
 - expected_values:
-    RAM_TP_FR_V3: 9.552
-    RAM_TT_FR_V2: 31
+    RAM2500_TP_FR_F: 622.5
+    RAM2500_TT_FR_F: 56
   response: |-
     4C0100C62A0F2185100
     4C0210060B05D545400

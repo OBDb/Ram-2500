@@ -1,34 +1,34 @@
 command_id: 740.4C0.22A0A1|fc=1
 test_cases:
 - expected_values:
-    RAM_TP_FL_AC: 53
-    RAM_TP_FR_AC: 53
-    RAM_TP_RL_AC: 57
-    RAM_TP_RR_AC: 57
+    RAM2500_TP_FL: 53
+    RAM2500_TP_FR: 53
+    RAM2500_TP_RL: 57
+    RAM2500_TP_RR: 57
   response: |-
     4C0100B62A0A1353539
     4C02139FFFFFF003539
 - expected_values:
-    RAM_TP_FL_AC: 53
-    RAM_TP_FR_AC: 53
-    RAM_TP_RL_AC: 57
-    RAM_TP_RR_AC: 57
+    RAM2500_TP_FL: 53
+    RAM2500_TP_FR: 53
+    RAM2500_TP_RL: 57
+    RAM2500_TP_RR: 57
   response: |-
     4C0100B62A0A1353539
     4C02139FFFFFF623539
 - expected_values:
-    RAM_TP_FL_AC: 60
-    RAM_TP_FR_AC: 60
-    RAM_TP_RL_AC: 64
-    RAM_TP_RR_AC: 63
+    RAM2500_TP_FL: 60
+    RAM2500_TP_FR: 60
+    RAM2500_TP_RL: 64
+    RAM2500_TP_RR: 63
   response: |-
     4C0100B62A0A13C3C3F
     4C02140FFFFFF643C3F
 - expected_values:
-    RAM_TP_FL_AC: 60
-    RAM_TP_FR_AC: 60
-    RAM_TP_RL_AC: 64
-    RAM_TP_RR_AC: 64
+    RAM2500_TP_FL: 60
+    RAM2500_TP_FR: 60
+    RAM2500_TP_RL: 64
+    RAM2500_TP_RR: 64
   response: |-
     4C0100B62A0A13C3C40
     4C02140FFFFFF643C40
