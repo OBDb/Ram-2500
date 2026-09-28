@@ -1,50 +1,50 @@
 command_id: 740.4C0.22A0F3|fc=1
 test_cases:
 - expected_values:
-    RAM_TP_RR_V3: 6.368
-    RAM_TT_RR_V2: 172
+    RAM2500_TP_RR_F: 431.8
+    RAM2500_TT_RR_F: 34
   response: |-
     4C0100C62A0F310DE00
     4C021004AB05CA8A800
 - expected_values:
-    RAM_TP_RR_V3: 6.766
-    RAM_TT_RR_V2: -29
+    RAM2500_TP_RR_F: 437.3
+    RAM2500_TT_RR_F: 35
   response: |-
     4C0100C62A0F3111500
     4C021004BC05CC5C500
 - expected_values:
-    RAM_TP_RR_V3: 6.766
-    RAM_TT_RR_V2: 163
+    RAM2500_TP_RR_F: 456.5
+    RAM2500_TT_RR_F: 44
   response: |-
     4C0100C62A0F311D500
     4C0210054B05D2B2B00
 - expected_values:
-    RAM_TP_RR_V3: 7.164
-    RAM_TT_RR_V2: -38
+    RAM2500_TP_RR_F: 462
+    RAM2500_TT_RR_F: 42
   response: |-
     4C0100C62A0F3120C00
     4C0210052C05D474700
 - expected_values:
-    RAM_TP_RR_V3: 7.164
-    RAM_TT_RR_V2: -38
+    RAM2500_TP_RR_F: 462
+    RAM2500_TT_RR_F: 42
   response: |-
     4C0100C62A0F3120C00
     4C0210052C05D7E7E00
 - expected_values:
-    RAM_TP_RR_V3: 7.164
-    RAM_TT_RR_V2: -38
+    RAM2500_TP_RR_F: 462
+    RAM2500_TT_RR_F: 43
   response: |-
     4C0100C62A0F3120C00
     4C0210053C05E1A1A00
 - expected_values:
-    RAM_TP_RR_V3: 7.164
-    RAM_TT_RR_V2: -10
+    RAM2500_TP_RR_F: 464.8
+    RAM2500_TT_RR_F: 43
   response: |-
     4C0100C62A0F3122800
     4C0210053C05C020200
 - expected_values:
-    RAM_TP_RR_V3: 8.358
-    RAM_TT_RR_V2: -43
+    RAM2500_TP_RR_F: 538.3
+    RAM2500_TT_RR_F: 29
   response: |-
     4C0100C62A0F3150700
     4C0210045B05DC2C200
