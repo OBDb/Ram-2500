@@ -15,6 +15,14 @@ test_cases:
     RAM2500_TP_RR: 61
   response: |-
     4C0100B62A0A13D3C3D
+    4C0213DFFFFFF643C3D
+- expected_values:
+    RAM2500_TP_FL: 61
+    RAM2500_TP_FR: 60
+    RAM2500_TP_RL: 61
+    RAM2500_TP_RR: 61
+  response: |-
+    4C0100B62A0A13D3C3D
     4C0213DFFFFFF653C3D
 - expected_values:
     RAM2500_TP_FL: 62
