@@ -13,6 +13,12 @@ test_cases:
     4C0100C62A0F3108100
     4C021004EB05E2F2F00
 - expected_values:
+    RAM2500_TP_RR_F: 426.3
+    RAM2500_TT_RR_F: 41
+  response: |-
+    4C0100C62A0F310A700
+    4C0210051F05C2E2E00
+- expected_values:
     RAM2500_TP_RR_F: 431.8
     RAM2500_TT_RR_F: 40
   response: |-
@@ -42,12 +48,6 @@ test_cases:
   response: |-
     4C0100C62A0F3119E00
     4C021005EC15CF1F100
-- expected_values:
-    RAM2500_TP_RR_F: 457.5
-    RAM2500_TT_RR_F: 46
-  response: |-
-    4C0100C62A0F311DF00
-    4C0210056F05C2E2E00
 - expected_values:
     RAM2500_TP_RR_F: 460.3
     RAM2500_TT_RR_F: 47

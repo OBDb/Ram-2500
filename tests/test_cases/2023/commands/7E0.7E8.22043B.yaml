@@ -27,3 +27,6 @@ test_cases:
 - expected_values:
     RAM2500_ODO: 64217.088
   response: 7E80562043B1E9F
+- expected_values:
+    RAM2500_ODO: 65191.936
+  response: 7E80562043B1F16
