@@ -1,0 +1,14 @@
+command_id: 7E1.7E9.2204FE
+test_cases:
+- expected_values:
+    RAM2500_ATF_T_2: 167
+  response: 7E9066204FE737172
+- expected_values:
+    RAM2500_ATF_T_2: 167
+  response: 7E9066204FE737273
+- expected_values:
+    RAM2500_ATF_T_2: 168.8
+  response: 7E9066204FE747273
+- expected_values:
+    RAM2500_ATF_T_2: 168.8
+  response: 7E9066204FE747374
