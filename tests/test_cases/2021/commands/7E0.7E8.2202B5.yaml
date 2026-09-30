@@ -1,0 +1,20 @@
+command_id: 7E0.7E8.2202B5
+test_cases:
+- expected_values:
+    RAM2500_REQUIRED_FUEL_CHG_4: 11.07812
+  response: 7E8056202B502C5
+- expected_values:
+    RAM2500_REQUIRED_FUEL_CHG_4: 11.34375
+  response: 7E8056202B502D6
+- expected_values:
+    RAM2500_REQUIRED_FUEL_CHG_4: 11.375
+  response: 7E8056202B502D8
+- expected_values:
+    RAM2500_REQUIRED_FUEL_CHG_4: 11.39062
+  response: 7E8056202B502D9
+- expected_values:
+    RAM2500_REQUIRED_FUEL_CHG_4: 11.40625
+  response: 7E8056202B502DA
+- expected_values:
+    RAM2500_REQUIRED_FUEL_CHG_4: 11.5
+  response: 7E8056202B502E0

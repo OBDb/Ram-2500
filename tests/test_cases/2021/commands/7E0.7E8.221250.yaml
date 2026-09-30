@@ -1,0 +1,8 @@
+command_id: 7E0.7E8.221250
+test_cases:
+- expected_values:
+    RAM2500_CHG_AIR_T: 133
+  response: '7E80462125078'
+- expected_values:
+    RAM2500_CHG_AIR_T: 134.8
+  response: '7E80462125079'

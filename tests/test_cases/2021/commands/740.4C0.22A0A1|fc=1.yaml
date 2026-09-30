@@ -1,0 +1,10 @@
+command_id: 740.4C0.22A0A1|fc=1
+test_cases:
+- expected_values:
+    RAM2500_TP_FL: 59
+    RAM2500_TP_FR: 53
+    RAM2500_TP_RL: 62
+    RAM2500_TP_RR: 60
+  response: |-
+    4C0100B62A0A13B353C
+    4C0213EFFFFFF65353C

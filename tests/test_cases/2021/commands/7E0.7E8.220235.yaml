@@ -1,0 +1,23 @@
+command_id: 7E0.7E8.220235
+test_cases:
+- expected_values:
+    RAM2500_INJ_WIDTH_CYL_2: 1.992
+  response: 7E807620235000007C8
+- expected_values:
+    RAM2500_INJ_WIDTH_CYL_2: 2.008
+  response: 7E807620235000007D8
+- expected_values:
+    RAM2500_INJ_WIDTH_CYL_2: 2.064
+  response: '7E80762023500000810'
+- expected_values:
+    RAM2500_INJ_WIDTH_CYL_2: 2.08
+  response: '7E80762023500000820'
+- expected_values:
+    RAM2500_INJ_WIDTH_CYL_2: 2.088
+  response: '7E80762023500000828'
+- expected_values:
+    RAM2500_INJ_WIDTH_CYL_2: 2.12
+  response: '7E80762023500000848'
+- expected_values:
+    RAM2500_INJ_WIDTH_CYL_2: 2.152
+  response: '7E80762023500000868'

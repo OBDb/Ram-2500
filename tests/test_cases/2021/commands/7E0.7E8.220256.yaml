@@ -1,0 +1,23 @@
+command_id: 7E0.7E8.220256
+test_cases:
+- expected_values:
+    RAM2500_FUEL_MASS_CYL_2: 11.07812
+  response: 7E80562025602C5
+- expected_values:
+    RAM2500_FUEL_MASS_CYL_2: 11.20312
+  response: 7E80562025602CD
+- expected_values:
+    RAM2500_FUEL_MASS_CYL_2: 11.23438
+  response: 7E80562025602CF
+- expected_values:
+    RAM2500_FUEL_MASS_CYL_2: 11.375
+  response: 7E80562025602D8
+- expected_values:
+    RAM2500_FUEL_MASS_CYL_2: 11.4375
+  response: 7E80562025602DC
+- expected_values:
+    RAM2500_FUEL_MASS_CYL_2: 11.45312
+  response: 7E80562025602DD
+- expected_values:
+    RAM2500_FUEL_MASS_CYL_2: 11.48438
+  response: 7E80562025602DF
