@@ -1,8 +1,8 @@
 command_id: 7E0.7E8.22012B
 test_cases:
 - expected_values:
-    RAM2500_CAT_MODEL_T: 189
+    RAM2500_CAT_MODEL_T: 509
   response: 7E80562012B01FD
 - expected_values:
-    RAM2500_CAT_MODEL_T: 190
+    RAM2500_CAT_MODEL_T: 510
   response: 7E80562012B01FE
