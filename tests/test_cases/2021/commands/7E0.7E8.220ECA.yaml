@@ -1,0 +1,5 @@
+command_id: 7E0.7E8.220ECA
+test_cases:
+- expected_values:
+    RAM2500_MDS_ACTIVE: 0
+  response: 7E805620ECA0000

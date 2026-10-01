@@ -1,0 +1,26 @@
+command_id: 7E0.7E8.2202B2
+test_cases:
+- expected_values:
+    RAM2500_REQUIRED_FUEL_CHG_1: 11.35938
+  response: 7E8056202B202D7
+- expected_values:
+    RAM2500_REQUIRED_FUEL_CHG_1: 11.57812
+  response: 7E8056202B202E5
+- expected_values:
+    RAM2500_REQUIRED_FUEL_CHG_1: 11.60938
+  response: 7E8056202B202E7
+- expected_values:
+    RAM2500_REQUIRED_FUEL_CHG_1: 11.64062
+  response: 7E8056202B202E9
+- expected_values:
+    RAM2500_REQUIRED_FUEL_CHG_1: 11.6875
+  response: 7E8056202B202EC
+- expected_values:
+    RAM2500_REQUIRED_FUEL_CHG_1: 11.76562
+  response: 7E8056202B202F1
+- expected_values:
+    RAM2500_REQUIRED_FUEL_CHG_1: 11.84375
+  response: 7E8056202B202F6
+- expected_values:
+    RAM2500_REQUIRED_FUEL_CHG_1: 12.09375
+  response: 7E8056202B20306

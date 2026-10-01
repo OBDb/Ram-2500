@@ -1,0 +1,8 @@
+command_id: 7E0.7E8.22069F
+test_cases:
+- expected_values:
+    RAM2500_VARIABLE_VLV_TIM_OIL_T: 106
+  response: 7E80462069FAA
+- expected_values:
+    RAM2500_VARIABLE_VLV_TIM_OIL_T: 107
+  response: 7E80462069FAB
