@@ -2,7 +2,9 @@
     { "hdr": "7E0",  "type": "engine" },
     { "hdr": "7E1",  "type": "transmission" },
     { "hdr": "DA10", "type": "engine" },
-    { "hdr": "DA18", "type": "transmission" }
+    { "hdr": "DA18", "type": "transmission" },
+    { "hdr": "DA40", "type": "bodyControl" },
+    { "hdr": "DAC7", "type": "tpms" }
   ],
   "commands": [
 { "hdr": "740", "rax": "4C0", "fcm1": true, "cmd": {"22": "A0A1"}, "freq": 15, "dbgfilter": { "to": 2013, "years": [2015, 2017, 2018, 2020], "from": 2025 },
@@ -65,9 +67,9 @@
   ]},
 { "hdr": "7AB", "rax": "52B", "fcm1": true, "cmd": {"22": "2802"}, "freq": 0.25, "dbgfilter": { "to": 2021, "from": 2025 },
   "signals": [
-    {"id": "RAM2500_GPS_HEADING",      "path": "GPS", "fmt": {"bix": 152, "len": 16, "max": 65535, "unit": "degrees" }, "name": "Heading"},
-    {"id": "RAM2500_GPS_SATS_TRACKED", "path": "GPS", "fmt": {"bix": 200, "len": 4,  "max": 15,    "unit": "scalar"  }, "name": "Satellites, tracked"},
-    {"id": "RAM2500_GPS_SATS_VISIBLE", "path": "GPS", "fmt": {"bix": 204, "len": 4,  "max": 15,    "unit": "scalar"  }, "name": "Satellites, visible"}
+    {"id": "RAM2500_GPS_HEADING",      "path": "GPS", "fmt": {"bix": 152, "len": 16, "max": 360, "div": 10, "unit": "degrees" }, "name": "Heading"},
+    {"id": "RAM2500_GPS_SATS_TRACKED", "path": "GPS", "fmt": {"bix": 200, "len": 4,  "max": 15,             "unit": "scalar"  }, "name": "Satellites, tracked"},
+    {"id": "RAM2500_GPS_SATS_VISIBLE", "path": "GPS", "fmt": {"bix": 204, "len": 4,  "max": 15,             "unit": "scalar"  }, "name": "Satellites, visible"}
   ]},
 { "hdr": "7DA", "rax": "7E2", "din": "03", "dbg": true, "cmd": {"22": "A020"}, "freq": 15,
   "signals": [
@@ -121,7 +123,7 @@
 { "hdr": "7E0", "rax": "7E8", "cmd": {"21": "57"}, "freq": 1, "dbgfilter": { "to": 2020, "from": 2022 },
   "signals": [
     {"id": "RAM2500_SOOT_LOAD_BASED_ON_P", "path": "Engine", "fmt": {          "len": 8,  "max": 34.55, "div": 100, "add": 32, "unit": "unknown" }, "name": "Soot load based on delta pressure"},
-    {"id": "RAM2500_ESITMATED_SOOT",       "path": "Engine", "fmt": {"bix": 8, "len": 16, "max": 65535,                        "unit": "seconds" }, "name": "Esitmated soot removal time"}
+    {"id": "RAM2500_ESITMATED_SOOT",       "path": "Engine", "fmt": {"bix": 8, "len": 16, "max": 65535,                        "unit": "seconds" }, "name": "Estimated soot removal time"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "A7"}, "freq": 1,
   "signals": [
@@ -178,16 +180,16 @@
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "D9"}, "freq": 5,
   "signals": [
-    {"id": "RAM2500_EGR_VLV_CMD_POSTIION", "path": "Engine", "fmt": {            "len": 16, "max": 543,             "div": 128, "add": 32, "unit": "percent"          }, "name": "Exhaust gas recirculation valve, commanded postiion"},
+    {"id": "RAM2500_EGR_VLV_CMD_POSTIION", "path": "Engine", "fmt": {            "len": 16, "max": 543,             "div": 128, "add": 32, "unit": "percent"          }, "name": "Exhaust gas recirculation valve, commanded position"},
     {"id": "RAM2500_EGR_ORIFICE_T",        "path": "Engine", "fmt": {"bix": 40,  "len": 16, "max": 29522, "mul": 9, "div": 20,  "add": 32, "unit": "fahrenheit"       }, "name": "Exhaust gas recirculation orifice temperature"},
     {"id": "RAM2500_EGR_FLOW",             "path": "Engine", "fmt": {"bix": 120, "len": 16, "max": 511,             "div": 128,            "unit": "kilogramsPerHour" }, "name": "Exhaust gas recirculation flow"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "DA"}, "freq": 5,
   "signals": [
-    {"id": "RAM2500_VGT_VIRTUAL_CHG_FLOW", "path": "Battery",  "fmt": {            "len": 16, "max": 264,    "mul": 0.0035436904,            "add": 32, "unit": "kilogramsPerHour" }, "name": "VGT virtual charge flow"},
+    {"id": "RAM2500_VGT_VIRTUAL_CHG_FLOW", "path": "Engine",   "fmt": {            "len": 16, "max": 264,    "mul": 0.0035436904,            "add": 32, "unit": "kilogramsPerHour" }, "name": "Turbocharger virtual charge flow"},
     {"id": "RAM2500_TURBO_SPD",            "path": "Movement", "fmt": {"bix": 32,  "len": 16, "max": 511992, "mul": 125,          "div": 16,            "unit": "rpm"              }, "name": "Turbo speed"},
-    {"id": "RAM2500_VGT_COMP_OULET_AIR_T", "path": "Engine",   "fmt": {"bix": 112, "len": 16, "max": 29522,  "mul": 9,            "div": 20, "add": 32, "unit": "fahrenheit"       }, "name": "VGT compressor oulet air temperature"},
-    {"id": "RAM2500_VGT_COMP_INLET_AIR_T", "path": "Engine",   "fmt": {"bix": 144, "len": 16, "max": 29522,  "mul": 9,            "div": 20, "add": 32, "unit": "fahrenheit"       }, "name": "VGT compressor inlet air temperature"}
+    {"id": "RAM2500_VGT_COMP_OULET_AIR_T", "path": "Engine",   "fmt": {"bix": 112, "len": 16, "max": 29522,  "mul": 9,            "div": 20, "add": 32, "unit": "fahrenheit"       }, "name": "Turbocharger compressor outlet air temperature"},
+    {"id": "RAM2500_VGT_COMP_INLET_AIR_T", "path": "Engine",   "fmt": {"bix": 144, "len": 16, "max": 29522,  "mul": 9,            "div": 20, "add": 32, "unit": "fahrenheit"       }, "name": "Turbocharger compressor inlet air temperature"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "cmd": {"22": "0109"}, "freq": 1, "dbgfilter": { "to": 2020, "from": 2022 },
   "signals": [
@@ -267,7 +269,7 @@
   ]},
 { "hdr": "7E0", "rax": "7E8", "cmd": {"22": "0227"}, "freq": 30, "dbgfilter": { "to": 2020, "from": 2022 },
   "signals": [
-    {"id": "RAM2500_FLI_INPUT", "path": "Fuel", "fmt": { "len": 8, "max": 100, "unit": "percent" }, "name": "Fuel level input", "suggestedMetric": "fuelTankLevel"}
+    {"id": "RAM2500_FLI_INPUT", "path": "Fuel", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "Fuel level input", "suggestedMetric": "fuelTankLevel"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "cmd": {"22": "022A"}, "freq": 1, "dbgfilter": { "to": 2020, "from": 2022 },
   "signals": [
@@ -423,7 +425,7 @@
   ]},
 { "hdr": "7E0", "rax": "7E8", "cmd": {"22": "18E7"}, "freq": 3600, "dbgfilter": { "to": 2020, "from": 2022 },
   "signals": [
-    {"id": "RAM2500_DPF_REGENS_18E7", "path": "Engine", "fmt": { "len": 16, "max": 32767, "min": -32768, "sign": true, "unit": "scalar" }, "name": "Total number of started regenerations"}
+    {"id": "RAM2500_DPF_REGENS_18E7", "path": "Engine", "fmt": { "len": 16, "max": 32767, "min": -32768, "sign": true, "unit": "scalar" }, "name": "Total number of started particulate filter cleanings"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1935"}, "freq": 5,
   "signals": [
@@ -439,7 +441,7 @@
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "2007"}, "freq": 3600,
   "signals": [
-    {"id": "RAM2500_ODO_LAST_OVERSPEED", "path": "Movement", "fmt": { "len": 24, "max": 1677721.5, "div": 10, "unit": "kilometers" }, "name": "Odometer at last overspeed recognition"}
+    {"id": "RAM2500_ODO_LAST_OVERSPEED", "path": "Movement", "fmt": { "len": 24, "max": 1677721.5, "div": 10, "unit": "kilometers" }, "name": "Odometer at last engine over-speed"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "3800"}, "freq": 1,
   "signals": [
@@ -475,7 +477,7 @@
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "5089"}, "freq": 3600,
   "signals": [
-    {"id": "RAM2500_DPF_REGENS_5089", "path": "Engine", "fmt": { "len": 8, "max": 25.5, "div": 10, "unit": "scalar" }, "name": "Total number of started regenerations"}
+    {"id": "RAM2500_DPF_REGENS_5089", "path": "Engine", "fmt": { "len": 8, "max": 25.5, "div": 10, "unit": "scalar" }, "name": "Total number of started particulate filter cleanings"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "508D"}, "freq": 1,
   "signals": [
@@ -511,7 +513,7 @@
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "A00A"}, "freq": 1,
   "signals": [
-    {"id": "RAM2500_AFT_DPF_OULET_P_SENS", "path": "Engine", "fmt": { "len": 16, "max": 294, "mul": 9, "div": 2000, "unit": "psi" }, "name": "AFT DPF oulet pressure sensor"}
+    {"id": "RAM2500_AFT_DPF_OULET_P_SENS", "path": "Engine", "fmt": { "len": 16, "max": 294, "mul": 9, "div": 2000, "unit": "psi" }, "name": "Particulate filter outlet pressure"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "A043"}, "freq": 30,
   "signals": [
@@ -555,11 +557,11 @@
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "A0C6"}, "freq": 5,
   "signals": [
-    {"id": "RAM2500_EXH_GAS_T_4_SCR_CAT", "path": "Engine", "fmt": {"bix": 16, "len": 16, "max": 32799, "min": -32736, "add": 32, "sign": true, "unit": "fahrenheit" }, "name": "Exhaust gas temperature 4 – SCR CAT midbed"}
+    {"id": "RAM2500_EXH_GAS_T_4_SCR_CAT", "path": "Engine", "fmt": {"bix": 16, "len": 16, "max": 32799, "min": -32736, "add": 32, "sign": true, "unit": "fahrenheit" }, "name": "Exhaust gas temperature 4, middle of SCR catalyst"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "A0C8"}, "freq": 5,
   "signals": [
-    {"id": "RAM2500_EXH_GAS_T_5_SCR_CAT", "path": "Engine", "fmt": {"bix": 16, "len": 16, "max": 32799, "min": -32736, "add": 32, "sign": true, "unit": "fahrenheit" }, "name": "Exhaust gas temperature 5 – SCR CAT oulet"}
+    {"id": "RAM2500_EXH_GAS_T_5_SCR_CAT", "path": "Engine", "fmt": {"bix": 16, "len": 16, "max": 32799, "min": -32736, "add": 32, "sign": true, "unit": "fahrenheit" }, "name": "Exhaust gas temperature 5, SCR catalyst outlet"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "A0DA"}, "freq": 1,
   "signals": [
@@ -583,11 +585,11 @@
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "A114"}, "freq": 1,
   "signals": [
-    {"id": "RAM2500_AFTERTREATMENT_INT", "path": "Engine", "fmt": {"bix": 16, "len": 16, "max": 32767, "min": -32768, "sign": true, "unit": "scalar" }, "name": "Aftertreatment intake nox, ppm"}
+    {"id": "RAM2500_AFTERTREATMENT_INT", "path": "Engine", "fmt": {"bix": 16, "len": 16, "max": 32767, "min": -32768, "sign": true, "unit": "scalar" }, "name": "Nitrogen oxides before exhaust treatment, ppm"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "A11A"}, "freq": 1,
   "signals": [
-    {"id": "RAM2500_AFTERTREATMENT", "path": "Engine", "fmt": {"bix": 16, "len": 16, "max": 32767, "min": -32768, "sign": true, "unit": "scalar" }, "name": "Aftertreatment outlet nox, ppm"}
+    {"id": "RAM2500_AFTERTREATMENT", "path": "Engine", "fmt": {"bix": 16, "len": 16, "max": 32767, "min": -32768, "sign": true, "unit": "scalar" }, "name": "Nitrogen oxides after exhaust treatment, ppm"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "A129"}, "freq": 1,
   "signals": [
@@ -705,19 +707,19 @@
   ]},
 { "hdr": "DA10", "rax": "10", "din": "03", "dbg": true, "cmd": {"22": "189F"}, "freq": 2,
   "signals": [
-    {"id": "RAM2500_VGT_CMD", "path": "Engine", "fmt": { "len": 16, "max": 100, "mul": 100, "div": 65535, "unit": "percent" }, "name": "VGT position commanded"}
+    {"id": "RAM2500_VGT_CMD", "path": "Engine", "fmt": { "len": 16, "max": 100, "mul": 100, "div": 65535, "unit": "percent" }, "name": "Turbocharger vane position commanded"}
   ]},
 { "hdr": "DA10", "rax": "10", "din": "03", "dbg": true, "cmd": {"22": "18A0"}, "freq": 2,
   "signals": [
-    {"id": "RAM2500_VGT_ACT", "path": "Engine", "fmt": { "len": 16, "max": 100, "mul": 100, "div": 65535, "unit": "percent" }, "name": "VGT position actual"}
+    {"id": "RAM2500_VGT_ACT", "path": "Engine", "fmt": { "len": 16, "max": 100, "mul": 100, "div": 65535, "unit": "percent" }, "name": "Turbocharger vane position actual"}
   ]},
 { "hdr": "DA10", "rax": "10", "fcm1": true, "din": "03", "dbg": true, "cmd": {"22": "18A4"}, "freq": 3600,
   "signals": [
-    {"id": "RAM2500_REGEN_TOTAL", "path": "Emissions", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Total DPF regenerations started"}
+    {"id": "RAM2500_REGEN_TOTAL", "path": "Emissions", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Total particulate filter cleanings started"}
   ]},
 { "hdr": "DA10", "rax": "10", "din": "03", "dbg": true, "cmd": {"22": "18A5"}, "freq": 60,
   "signals": [
-    {"id": "RAM2500_REGEN_INTERRUPTED", "path": "Emissions", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "DPF regen interrupted count"}
+    {"id": "RAM2500_REGEN_INTERRUPTED", "path": "Emissions", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Particulate filter cleanings interrupted"}
   ]},
 { "hdr": "DA10", "rax": "10", "din": "03", "dbg": true, "cmd": {"22": "18D0"}, "freq": 1,
   "signals": [
@@ -725,19 +727,19 @@
   ]},
 { "hdr": "DA10", "rax": "10", "fcm1": true, "din": "03", "dbg": true, "cmd": {"22": "18DE"}, "freq": 5,
   "signals": [
-    {"id": "RAM2500_DPF_INLET_T", "path": "Emissions", "fmt": { "len": 16, "max": 900, "min": -40, "mul": 2, "div": 100, "add": -40, "unit": "celsius" }, "name": "DPF inlet temperature"}
+    {"id": "RAM2500_DPF_INLET_T", "path": "Emissions", "fmt": { "len": 16, "max": 900, "min": -40, "mul": 2, "div": 100, "add": -40, "unit": "celsius" }, "name": "Particulate filter inlet temperature"}
   ]},
 { "hdr": "DA10", "rax": "10", "din": "03", "dbg": true, "cmd": {"22": "18E2"}, "freq": 5,
   "signals": [
-    {"id": "RAM2500_DPF_DIFF_PRESS", "path": "Emissions", "fmt": { "len": 16, "max": 50, "min": -50, "div": 10, "add": -3276.8, "unit": "kilopascal" }, "name": "DPF differential pressure"}
+    {"id": "RAM2500_DPF_DIFF_PRESS", "path": "Emissions", "fmt": { "len": 16, "max": 50, "min": -50, "div": 10, "add": -3276.8, "unit": "kilopascal" }, "name": "Particulate filter differential pressure"}
   ]},
 { "hdr": "DA10", "rax": "10", "fcm1": true, "din": "03", "dbg": true, "cmd": {"22": "18E4"}, "freq": 30,
   "signals": [
-    {"id": "RAM2500_DPF_SOOT_PCT", "path": "Emissions", "fmt": { "len": 16, "max": 100, "mul": 1000, "div": 65535, "unit": "percent" }, "name": "DPF soot clogging level"}
+    {"id": "RAM2500_DPF_SOOT_PCT", "path": "Emissions", "fmt": { "len": 16, "max": 100, "mul": 1000, "div": 65535, "unit": "percent" }, "name": "Particulate filter soot level"}
   ]},
 { "hdr": "DA10", "rax": "10", "din": "03", "dbg": true, "cmd": {"22": "18E8"}, "freq": 5,
   "signals": [
-    {"id": "RAM2500_DPF_FLOW_RES_2", "path": "Emissions", "fmt": { "len": 16, "max": 10, "div": 10000, "unit": "scalar" }, "name": "DPF flow resistance"}
+    {"id": "RAM2500_DPF_FLOW_RES_2", "path": "Emissions", "fmt": { "len": 16, "max": 6.5535, "div": 10000, "unit": "scalar" }, "name": "Particulate filter flow resistance"}
   ]},
 { "hdr": "DA10", "rax": "10", "din": "03", "dbg": true, "cmd": {"22": "18EC"}, "freq": 5,
   "signals": [
@@ -753,7 +755,7 @@
   ]},
 { "hdr": "DA10", "rax": "10", "din": "03", "dbg": true, "cmd": {"22": "190B"}, "freq": 0.25,
   "signals": [
-    {"id": "RAM2500_VSS_ECU", "path": "Movement", "fmt": { "len": 16, "max": 300, "unit": "kilometersPerHour" }, "name": "Vehicle speed (ECM)", "suggestedMetric": "speed"}
+    {"id": "RAM2500_VSS_ECU", "path": "Movement", "fmt": { "len": 16, "max": 300, "unit": "kilometersPerHour" }, "name": "Vehicle speed, engine module", "suggestedMetric": "speed"}
   ]},
 { "hdr": "DA10", "rax": "10", "din": "03", "dbg": true, "cmd": {"22": "192D"}, "freq": 1,
   "signals": [
@@ -809,19 +811,19 @@
   ]},
 { "hdr": "DA10", "rax": "10", "din": "03", "dbg": true, "cmd": {"22": "3808"}, "freq": 3600,
   "signals": [
-    {"id": "RAM2500_AVG_REGEN_TEMP", "path": "Emissions", "fmt": { "len": 16, "max": 900, "min": -40, "div": 50, "add": -40, "unit": "celsius" }, "name": "DPF regen temperature (last 5 average)"}
+    {"id": "RAM2500_AVG_REGEN_TEMP", "path": "Emissions", "fmt": { "len": 16, "max": 900, "min": -40, "div": 50, "add": -40, "unit": "celsius" }, "name": "Particulate filter cleaning temperature, last 5 average"}
   ]},
 { "hdr": "DA10", "rax": "10", "din": "03", "dbg": true, "cmd": {"22": "3809"}, "freq": 3600,
   "signals": [
-    {"id": "RAM2500_AVG_DIST_REGENS", "path": "Emissions", "fmt": { "len": 16, "max": 10000, "mul": 10, "unit": "kilometers" }, "name": "Distance between DPF regens (last 5 average)"}
+    {"id": "RAM2500_AVG_DIST_REGENS", "path": "Emissions", "fmt": { "len": 16, "max": 10000, "mul": 10, "unit": "kilometers" }, "name": "Distance between particulate filter cleanings, last 5 average"}
   ]},
 { "hdr": "DA10", "rax": "10", "din": "03", "dbg": true, "cmd": {"22": "380A"}, "freq": 3600,
   "signals": [
-    {"id": "RAM2500_AVG_REGEN_DUR", "path": "Emissions", "fmt": { "len": 16, "max": 30, "div": 60, "unit": "minutes" }, "name": "DPF regen duration (last 5 average)"}
+    {"id": "RAM2500_AVG_REGEN_DUR", "path": "Emissions", "fmt": { "len": 16, "max": 30, "div": 60, "unit": "minutes" }, "name": "Particulate filter cleaning duration, last 5 average"}
   ]},
 { "hdr": "DA10", "rax": "10", "din": "03", "dbg": true, "cmd": {"22": "380B"}, "freq": 5,
   "signals": [
-    {"id": "RAM2500_REGEN_PROGRESS", "path": "Emissions", "fmt": { "len": 16, "max": 100, "mul": 100, "div": 65535, "unit": "percent" }, "name": "DPF regen progress"}
+    {"id": "RAM2500_REGEN_PROGRESS", "path": "Emissions", "fmt": { "len": 16, "max": 100, "mul": 100, "div": 65535, "unit": "percent" }, "name": "Particulate filter cleaning progress"}
   ]},
 { "hdr": "DA10", "rax": "10", "din": "03", "dbg": true, "cmd": {"22": "3813"}, "freq": 3600,
   "signals": [
@@ -829,7 +831,7 @@
   ]},
 { "hdr": "DA10", "rax": "10", "din": "03", "dbg": true, "cmd": {"22": "3912"}, "freq": 3600,
   "signals": [
-    {"id": "RAM2500_REGEN_COMPLETED", "path": "Emissions", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Total DPF regenerations completed"}
+    {"id": "RAM2500_REGEN_COMPLETED", "path": "Emissions", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Total particulate filter cleanings completed"}
   ]},
 { "hdr": "DA10", "rax": "10", "din": "03", "dbg": true, "cmd": {"22": "3914"}, "freq": 5,
   "signals": [
@@ -837,11 +839,11 @@
   ]},
 { "hdr": "DA10", "rax": "10", "din": "03", "dbg": true, "cmd": {"22": "3915"}, "freq": 5,
   "signals": [
-    {"id": "RAM2500_DPF_OUTLET_T", "path": "Emissions", "fmt": { "len": 16, "max": 900, "min": -40, "mul": 2, "div": 100, "add": -40, "unit": "celsius" }, "name": "DPF outlet temperature"}
+    {"id": "RAM2500_DPF_OUTLET_T", "path": "Emissions", "fmt": { "len": 16, "max": 900, "min": -40, "mul": 2, "div": 100, "add": -40, "unit": "celsius" }, "name": "Particulate filter outlet temperature"}
   ]},
 { "hdr": "DA10", "rax": "10", "din": "03", "dbg": true, "cmd": {"22": "3917"}, "freq": 5,
   "signals": [
-    {"id": "RAM2500_EGR_COOLER_T", "path": "Engine", "fmt": { "len": 16, "max": 900, "min": -40, "mul": 2, "div": 100, "add": -40, "unit": "celsius" }, "name": "EGR cooler downstream temperature"}
+    {"id": "RAM2500_EGR_COOLER_T", "path": "Engine", "fmt": { "len": 16, "max": 900, "min": -40, "mul": 2, "div": 100, "add": -40, "unit": "celsius" }, "name": "Exhaust gas recirculation cooler outlet temperature"}
   ]},
 { "hdr": "DA10", "rax": "10", "din": "03", "dbg": true, "cmd": {"22": "392B"}, "freq": 60,
   "signals": [
@@ -874,7 +876,7 @@
   ]},
 { "hdr": "DA18", "rax": "18", "cmd": {"22": "1018"}, "freq": 2, "dbgfilter": { "to": 2025, "from": 2027 },
   "signals": [
-    {"id": "RAM2500_TCM_TORQUE", "path": "Transmission", "fmt": { "len": 16, "max": 1000, "min": -500, "add": -500, "unit": "newtonMeters" }, "name": "TCM reported torque"}
+    {"id": "RAM2500_TCM_TORQUE", "path": "Transmission", "fmt": { "len": 16, "max": 2000, "min": -500, "add": -500, "unit": "newtonMeters" }, "name": "Transmission reported torque"}
   ]},
 { "hdr": "DA18", "rax": "18", "cmd": {"22": "2024"}, "freq": 86400, "dbgfilter": { "to": 2025, "from": 2027 },
   "signals": [

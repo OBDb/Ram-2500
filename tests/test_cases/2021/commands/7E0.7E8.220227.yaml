@@ -1,5 +1,5 @@
 command_id: 7E0.7E8.220227
 test_cases:
 - expected_values:
-    RAM2500_FLI_INPUT: 100
+    RAM2500_FLI_INPUT: 60.39216
   response: 7E8046202279A

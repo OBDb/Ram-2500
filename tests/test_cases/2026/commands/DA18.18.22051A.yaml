@@ -74,10 +74,6 @@ test_cases:
 - expected_values:
     RAM2500_GEAR_CURRENT: 8
     RAM2500_GEAR_DESIRED: 8
-  response: 18DAF1180462051A88
-- expected_values:
-    RAM2500_GEAR_CURRENT: 8
-    RAM2500_GEAR_DESIRED: 8
   response: |-
     18DAF1180462051A88
     18DAF118024700
@@ -93,3 +89,13 @@ test_cases:
   response: |-
     18DAF1180462051A88
     18DAF1180441310E46
+- expected_values:
+    RAM2500_GEAR_CURRENT: null
+    RAM2500_GEAR_DESIRED: null
+  response: 18DAF1180462051ADD
+- expected_values:
+    RAM2500_GEAR_CURRENT: null
+    RAM2500_GEAR_DESIRED: null
+  response: |-
+    18DAF1180462051ADD
+    18DAF11803410426
