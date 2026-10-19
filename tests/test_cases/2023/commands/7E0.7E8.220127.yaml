@@ -1,5 +1,8 @@
 command_id: 7E0.7E8.220127
 test_cases:
 - expected_values:
+    RAM2500_AAT_2: 70
+  response: '7E80462012755'
+- expected_values:
     RAM2500_AAT_2: 73.6
   response: '7E80462012757'

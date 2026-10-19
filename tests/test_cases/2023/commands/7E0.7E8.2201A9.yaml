@@ -1,0 +1,8 @@
+command_id: 7E0.7E8.2201A9
+test_cases:
+- expected_values:
+    RAM2500_KNOCK_SENS_1: 0.34668
+  response: 7E8056201A911C0
+- expected_values:
+    RAM2500_KNOCK_SENS_1: 0.44434
+  response: 7E8056201A916C0

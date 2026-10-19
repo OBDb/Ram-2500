@@ -1,0 +1,5 @@
+command_id: 7E0.7E8.220255
+test_cases:
+- expected_values:
+    RAM2500_FUEL_MASS_CYL_1: 22.82812
+  response: 7E80562025505B5

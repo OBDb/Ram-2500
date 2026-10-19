@@ -1,0 +1,8 @@
+command_id: 7E0.7E8.220174
+test_cases:
+- expected_values:
+    RAM2500_MAP: 42.4
+  response: 7E80562017400D4
+- expected_values:
+    RAM2500_MAP: 71
+  response: '7E8056201740163'
