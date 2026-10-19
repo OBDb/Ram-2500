@@ -1,0 +1,8 @@
+command_id: 7E0.7E8.221247
+test_cases:
+- expected_values:
+    RAM2500_THROTTLE_INLET_P: 97.64375
+  response: 7E8056212473D07
+- expected_values:
+    RAM2500_THROTTLE_INLET_P: 100.51875
+  response: 7E8056212473ED3

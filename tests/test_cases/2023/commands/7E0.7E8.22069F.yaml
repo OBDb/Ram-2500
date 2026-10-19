@@ -3,3 +3,6 @@ test_cases:
 - expected_values:
     RAM2500_VARIABLE_VLV_TIM_OIL_T: 105
   response: 7E80462069FA9
+- expected_values:
+    RAM2500_VARIABLE_VLV_TIM_OIL_T: 107
+  response: 7E80462069FAB

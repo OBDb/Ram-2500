@@ -1,0 +1,8 @@
+command_id: 7E0.7E8.220329
+test_cases:
+- expected_values:
+    RAM2500_AC_HIGH_SIDE_P_2: 574
+  response: '7E80462032929'
+- expected_values:
+    RAM2500_AC_HIGH_SIDE_P_2: 812
+  response: 7E8046203293A

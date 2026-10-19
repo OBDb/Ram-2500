@@ -1,0 +1,8 @@
+command_id: 7E0.7E8.220944
+test_cases:
+- expected_values:
+    RAM2500_BRAKE_BOOSTER_P: 52.6
+  response: 7E805620944148C
+- expected_values:
+    RAM2500_BRAKE_BOOSTER_P: 79.55
+  response: 7E8056209441F13

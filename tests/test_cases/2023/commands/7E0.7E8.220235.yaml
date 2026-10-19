@@ -1,0 +1,8 @@
+command_id: 7E0.7E8.220235
+test_cases:
+- expected_values:
+    RAM2500_INJ_WIDTH_CYL_2: 2.336
+  response: '7E80762023500000920'
+- expected_values:
+    RAM2500_INJ_WIDTH_CYL_2: 4.488
+  response: '7E80762023500001188'

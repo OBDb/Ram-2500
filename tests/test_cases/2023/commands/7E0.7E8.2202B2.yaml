@@ -1,0 +1,5 @@
+command_id: 7E0.7E8.2202B2
+test_cases:
+- expected_values:
+    RAM2500_REQUIRED_FUEL_CHG_1: 22.9375
+  response: 7E8056202B205BC

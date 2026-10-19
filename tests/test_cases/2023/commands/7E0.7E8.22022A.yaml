@@ -1,0 +1,8 @@
+command_id: 7E0.7E8.22022A
+test_cases:
+- expected_values:
+    RAM2500_EOP: 33.06
+  response: 7E80462022A39
+- expected_values:
+    RAM2500_EOP: 52.2
+  response: 7E80462022A5A
