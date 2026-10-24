@@ -87,16 +87,16 @@
   "signals": [
     {"id": "RAM2500_TP_RR_7DA", "path": "Tires", "fmt": { "len": 8, "max": 92, "mul": 1541, "div": 4250, "unit": "psi" }, "name": "Rear right tire pressure", "suggestedMetric": "rearRightTirePressure"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "17"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"21": "17"}, "freq": 1, "dbgfilter": { "to": 2013, "from": 2015 },
   "signals": [
     {"id": "RAM2500_LINE_P_DUTY", "path": "Engine", "fmt": {           "len": 16, "max": 100, "div": 655, "unit": "percent" }, "name": "Line pressure duty cycle"},
     {"id": "RAM2500_LINE_P",      "path": "Engine", "fmt": {"bix": 16, "len": 8,  "max": 255,             "unit": "psi"     }, "name": "Line pressure"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"21": "18"}, "freq": 5, "dbgfilter": { "to": 2015, "from": 2017 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"21": "18"}, "freq": 5, "dbgfilter": { "to": 2013, "years": [2015], "from": 2017 },
   "signals": [
     {"id": "RAM2500_ATF_T_V_2", "path": "Transmission", "fmt": { "len": 16, "max": 1023, "div": 64, "unit": "fahrenheit" }, "name": "Transmission fluid temperature v.2"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "23"}, "freq": 5,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"21": "23"}, "freq": 5, "dbgfilter": { "to": 2013, "from": 2015 },
   "signals": [
     {"id": "RAM2500_AAT",   "path": "Engine",  "fmt": {           "len": 16, "max": 1023, "div": 64, "unit": "fahrenheit" }, "name": "Ambient air temperature"},
     {"id": "RAM2500_BAT_T", "path": "Battery", "fmt": {"bix": 48, "len": 16, "max": 1023, "div": 64, "unit": "fahrenheit" }, "name": "Battery temperature"}
@@ -105,7 +105,7 @@
   "signals": [
     {"id": "RAM2500_EOT_212D", "path": "Engine", "fmt": {"bix": 56, "len": 8, "max": 376, "min": -83, "mul": 9, "div": 5, "add": -83, "unit": "fahrenheit" }, "name": "Engine oil temperature", "suggestedMetric": "engineOilTemperature"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "3A"}, "freq": 5,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"21": "3A"}, "freq": 5, "dbgfilter": { "to": 2013, "from": 2015 },
   "signals": [
     {"id": "RAM2500_TRANS_SUMP_T_VAR_1",    "path": "Transmission", "fmt": {"bix": 80, "len": 8,  "max": 1020, "mul": 4,                        "unit": "fahrenheit" }, "name": "Transmission sump temperature, variant 1"},
     {"id": "RAM2500_TRANS_TQ_CONV_T_VAR_1", "path": "Transmission", "fmt": {"bix": 96, "len": 16, "max": 1875, "mul": 9, "div": 320, "add": 32, "unit": "fahrenheit" }, "name": "Transmission torque converter temperature, variant 1"}
@@ -178,7 +178,7 @@
     {"id": "RAM2500_DPF_REGEN_ACTIVE",    "path": "Engine", "fmt": {"bix": 79, "len": 1,  "max": 1,                  "unit": "offon"   }, "name": "Diesel particulate filter regen active"},
     {"id": "RAM2500_REGEN_ENABLE_ON_OFF", "path": "Engine", "fmt": {"bix": 95, "len": 1,  "max": 1,                  "unit": "offon"   }, "name": "Regen enable, on/off – alternative"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "D9"}, "freq": 5,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"21": "D9"}, "freq": 5, "dbgfilter": { "to": 2013, "from": 2015 },
   "signals": [
     {"id": "RAM2500_EGR_VLV_CMD_POSTIION", "path": "Engine", "fmt": {            "len": 16, "max": 543,             "div": 128, "add": 32, "unit": "percent"          }, "name": "Exhaust gas recirculation valve, commanded position"},
     {"id": "RAM2500_EGR_ORIFICE_T",        "path": "Engine", "fmt": {"bix": 40,  "len": 16, "max": 29522, "mul": 9, "div": 20,  "add": 32, "unit": "fahrenheit"       }, "name": "Exhaust gas recirculation orifice temperature"},
@@ -495,7 +495,7 @@
   "signals": [
     {"id": "RAM2500_TQ_CONV_SLIP_VAR_2", "path": "Transmission", "fmt": {"bix": 48, "len": 16, "max": 32767, "min": -32768, "sign": true, "unit": "rpm" }, "name": "Torque converter slip, variant 2"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "A002"}, "freq": 5,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "A002"}, "freq": 5, "dbgfilter": { "to": 2013, "from": 2015 },
   "signals": [
     {"id": "RAM2500_ATF_T_VAR_2", "path": "Transmission", "fmt": { "len": 8, "max": 401, "min": -58, "mul": 9, "div": 5, "add": -58, "unit": "fahrenheit" }, "name": "Transmission fluid temperature, variant 2"}
   ]},
@@ -503,7 +503,7 @@
   "signals": [
     {"id": "RAM2500_TIME_SINCE_ACTIVE", "path": "Engine", "fmt": {"bix": 16, "len": 16, "max": 65535, "unit": "hours" }, "name": "Time since active regen"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "A004"}, "freq": 5,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "A004"}, "freq": 5, "dbgfilter": { "to": 2013, "from": 2015 },
   "signals": [
     {"id": "RAM2500_DEF_T", "path": "Engine", "fmt": {"bix": 24, "len": 8, "max": 127, "min": -128, "sign": true, "unit": "percent" }, "name": "DEF temperature"}
   ]},
@@ -511,35 +511,35 @@
   "signals": [
     {"id": "RAM2500_DEF_LEVEL", "path": "Engine", "fmt": {"bix": 24, "len": 8, "max": 255, "unit": "percent" }, "name": "DEF level"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "A00A"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "A00A"}, "freq": 1, "dbgfilter": { "to": 2013, "from": 2015 },
   "signals": [
     {"id": "RAM2500_AFT_DPF_OULET_P_SENS", "path": "Engine", "fmt": { "len": 16, "max": 294, "mul": 9, "div": 2000, "unit": "psi" }, "name": "Particulate filter outlet pressure"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "A043"}, "freq": 30,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "A043"}, "freq": 30, "dbgfilter": { "to": 2013, "from": 2015 },
   "signals": [
     {"id": "RAM2500_FLI_AVG", "path": "Fuel", "fmt": { "len": 8, "max": 255, "unit": "percent" }, "name": "Fuel level average"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "A054"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "A054"}, "freq": 1, "dbgfilter": { "to": 2013, "from": 2015 },
   "signals": [
     {"id": "RAM2500_BOOST_P", "path": "Engine", "fmt": { "len": 16, "max": 150, "div": 435, "unit": "psi" }, "name": "Boost pressure"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "A067"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "A067"}, "freq": 1, "dbgfilter": { "to": 2013, "from": 2015 },
   "signals": [
     {"id": "RAM2500_FUEL_RAIL_P", "path": "Fuel", "fmt": {"bix": 8, "len": 16, "max": 131070, "mul": 2, "unit": "bars" }, "name": "Fuel rail pressure"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "A09F"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "A09F"}, "freq": 1, "dbgfilter": { "to": 2013, "from": 2015 },
   "signals": [
     {"id": "RAM2500_GEAR_CMD", "path": "Transmission", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Transmission gear, commanded"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "A0A0"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "A0A0"}, "freq": 1, "dbgfilter": { "to": 2013, "from": 2015 },
   "signals": [
     {"id": "RAM2500_GEAR", "path": "Transmission", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Transmission gear, actual"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "A0A3"}, "freq": 5,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "A0A3"}, "freq": 5, "dbgfilter": { "to": 2013, "from": 2015 },
   "signals": [
     {"id": "RAM2500_TRANS_SUMP_T", "path": "Transmission", "fmt": { "len": 16, "max": 921, "mul": 9, "div": 640, "unit": "fahrenheit" }, "name": "Transmission sump temperature"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "A0A4"}, "freq": 5,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "A0A4"}, "freq": 5, "dbgfilter": { "to": 2013, "from": 2015 },
   "signals": [
     {"id": "RAM2500_TRANS_TQ_CONV_T", "path": "Transmission", "fmt": { "len": 16, "max": 1843, "mul": 9, "div": 320, "unit": "fahrenheit" }, "name": "Transmission torque converter temperature"}
   ]},
@@ -555,11 +555,11 @@
   "signals": [
     {"id": "RAM2500_EXH_GAS_T_3_DPF", "path": "Engine", "fmt": {"bix": 16, "len": 16, "max": 32799, "min": -32736, "add": 32, "sign": true, "unit": "fahrenheit" }, "name": "Exhaust gas temperature 3 – DPF outlet"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "A0C6"}, "freq": 5,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "A0C6"}, "freq": 5, "dbgfilter": { "to": 2013, "from": 2015 },
   "signals": [
     {"id": "RAM2500_EXH_GAS_T_4_SCR_CAT", "path": "Engine", "fmt": {"bix": 16, "len": 16, "max": 32799, "min": -32736, "add": 32, "sign": true, "unit": "fahrenheit" }, "name": "Exhaust gas temperature 4, middle of SCR catalyst"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "A0C8"}, "freq": 5,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "A0C8"}, "freq": 5, "dbgfilter": { "to": 2013, "from": 2015 },
   "signals": [
     {"id": "RAM2500_EXH_GAS_T_5_SCR_CAT", "path": "Engine", "fmt": {"bix": 16, "len": 16, "max": 32799, "min": -32736, "add": 32, "sign": true, "unit": "fahrenheit" }, "name": "Exhaust gas temperature 5, SCR catalyst outlet"}
   ]},
@@ -567,7 +567,7 @@
   "signals": [
     {"id": "RAM2500_EGR_VLV_POS", "path": "Engine", "fmt": {"bix": 16, "len": 16, "max": 2047, "min": -2048, "div": 16, "sign": true, "unit": "percent" }, "name": "Exhaust gas recirculation valve position"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "A0DC"}, "freq": 5,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "A0DC"}, "freq": 5, "dbgfilter": { "to": 2013, "from": 2015 },
   "signals": [
     {"id": "RAM2500_EGR_T", "path": "Engine", "fmt": {"bix": 16, "len": 16, "max": 921, "mul": 9, "div": 640, "unit": "percent" }, "name": "Exhaust gas recirculation temperature"}
   ]},
@@ -583,31 +583,31 @@
   "signals": [
     {"id": "RAM2500_CHARGED_AIR_COOLER_T", "path": "Battery", "fmt": {"bix": 16, "len": 16, "max": 18906, "mul": 36, "div": 125, "add": 32, "unit": "fahrenheit" }, "name": "Charged air cooler outlet temperature"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "A114"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "A114"}, "freq": 1, "dbgfilter": { "to": 2013, "from": 2015 },
   "signals": [
     {"id": "RAM2500_AFTERTREATMENT_INT", "path": "Engine", "fmt": {"bix": 16, "len": 16, "max": 32767, "min": -32768, "sign": true, "unit": "scalar" }, "name": "Nitrogen oxides before exhaust treatment, ppm"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "A11A"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "A11A"}, "freq": 1, "dbgfilter": { "to": 2013, "from": 2015 },
   "signals": [
     {"id": "RAM2500_AFTERTREATMENT", "path": "Engine", "fmt": {"bix": 16, "len": 16, "max": 32767, "min": -32768, "sign": true, "unit": "scalar" }, "name": "Nitrogen oxides after exhaust treatment, ppm"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "A129"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "A129"}, "freq": 1, "dbgfilter": { "to": 2013, "from": 2015 },
   "signals": [
     {"id": "RAM2500_DEF_DOSING_RATE_GPH", "path": "Engine", "fmt": {"bix": 16, "len": 16, "max": 32767, "min": -32768, "sign": true, "unit": "scalar" }, "name": "DEF dosing rate, gph"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "A12B"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "A12B"}, "freq": 1, "dbgfilter": { "to": 2013, "from": 2015 },
   "signals": [
     {"id": "RAM2500_DEF_QUALITY", "path": "Engine", "fmt": {"bix": 24, "len": 8, "max": 255, "unit": "percent" }, "name": "DEF quality"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "B010"}, "freq": 5,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "B010"}, "freq": 5, "dbgfilter": { "to": 2013, "from": 2015 },
   "signals": [
     {"id": "RAM2500_ATF_T_VAR_1", "path": "Transmission", "fmt": { "len": 16, "max": 1023, "div": 64, "unit": "fahrenheit" }, "name": "Transmission fluid temperature, variant 1"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "B028"}, "freq": 0.25,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "B028"}, "freq": 0.25, "dbgfilter": { "to": 2013, "from": 2015 },
   "signals": [
     {"id": "RAM2500_TQ_CONV_SLIP_VAR_1", "path": "Transmission", "fmt": { "len": 16, "max": 460, "min": -460, "mul": 9, "div": 640, "sign": true, "unit": "rpm" }, "name": "Torque converter slip, variant 1"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "B09B"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "B09B"}, "freq": 1, "dbgfilter": { "to": 2013, "from": 2015 },
   "signals": [
     {"id": "RAM2500_TQ_CONV_LOCK", "path": "Transmission", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Torque converter lock status"}
   ]},

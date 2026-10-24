@@ -1,0 +1,22 @@
+command_id: 7E0.7E8.2117
+test_cases:
+- expected_values:
+    RAM2500_LINE_P: 129
+    RAM2500_LINE_P_DUTY: 5.08092
+  response: 7E80761170D008179A0
+- expected_values:
+    RAM2500_LINE_P: 150
+    RAM2500_LINE_P_DUTY: 8.90229
+  response: 7E807611716C7968B93
+- expected_values:
+    RAM2500_LINE_P: 113
+    RAM2500_LINE_P_DUTY: 14.84427
+  response: 7E807611725FB716A6F
+- expected_values:
+    RAM2500_LINE_P: 58
+    RAM2500_LINE_P_DUTY: 20.54962
+  response: 7E807611734943A3A3C
+- expected_values:
+    RAM2500_LINE_P: 62
+    RAM2500_LINE_P_DUTY: 21.82901
+  response: 7E807611737DA3E3D3E

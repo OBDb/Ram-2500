@@ -1,0 +1,17 @@
+command_id: 7E0.7E8.22A043
+test_cases:
+- expected_values:
+    RAM2500_FLI_AVG: 59
+  response: 7E80562A0433B00
+- expected_values:
+    RAM2500_FLI_AVG: 59
+  response: 7E80562A0433B80
+- expected_values:
+    RAM2500_FLI_AVG: 60
+  response: 7E80562A0433C00
+- expected_values:
+    RAM2500_FLI_AVG: 60
+  response: 7E80562A0433C80
+- expected_values:
+    RAM2500_FLI_AVG: 61
+  response: 7E80562A0433D00

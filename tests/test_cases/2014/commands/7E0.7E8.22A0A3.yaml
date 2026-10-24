@@ -1,0 +1,11 @@
+command_id: 7E0.7E8.22A0A3
+test_cases:
+- expected_values:
+    RAM2500_TRANS_SUMP_T: 93.6
+  response: 7E80562A0A31A00
+- expected_values:
+    RAM2500_TRANS_SUMP_T: 95.4
+  response: 7E80562A0A31A80
+- expected_values:
+    RAM2500_TRANS_SUMP_T: 129.6
+  response: 7E80562A0A32400

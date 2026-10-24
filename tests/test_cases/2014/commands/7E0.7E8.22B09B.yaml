@@ -1,0 +1,8 @@
+command_id: 7E0.7E8.22B09B
+test_cases:
+- expected_values:
+    RAM2500_TQ_CONV_LOCK: 32
+  response: 7E80462B09B20
+- expected_values:
+    RAM2500_TQ_CONV_LOCK: 128
+  response: 7E80462B09B80
