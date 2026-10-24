@@ -1,0 +1,23 @@
+command_id: 7E0.7E8.22A09F
+test_cases:
+- expected_values:
+    RAM2500_GEAR_CMD: 0
+  response: 7E80462A09F00
+- expected_values:
+    RAM2500_GEAR_CMD: 1
+  response: 7E80462A09F01
+- expected_values:
+    RAM2500_GEAR_CMD: 2
+  response: 7E80462A09F02
+- expected_values:
+    RAM2500_GEAR_CMD: 3
+  response: 7E80462A09F03
+- expected_values:
+    RAM2500_GEAR_CMD: 4
+  response: 7E80462A09F04
+- expected_values:
+    RAM2500_GEAR_CMD: 5
+  response: 7E80462A09F05
+- expected_values:
+    RAM2500_GEAR_CMD: 6
+  response: 7E80462A09F06

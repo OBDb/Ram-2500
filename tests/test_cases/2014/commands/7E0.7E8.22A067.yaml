@@ -1,0 +1,14 @@
+command_id: 7E0.7E8.22A067
+test_cases:
+- expected_values:
+    RAM2500_FUEL_RAIL_P: 312
+  response: 7E80762A06700009C00
+- expected_values:
+    RAM2500_FUEL_RAIL_P: 344
+  response: 7E80762A0670000ACF0
+- expected_values:
+    RAM2500_FUEL_RAIL_P: 508
+  response: 7E80762A0670000FEA0
+- expected_values:
+    RAM2500_FUEL_RAIL_P: 540
+  response: 7E80762A06700010EC0
