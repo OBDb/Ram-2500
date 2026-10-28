@@ -435,7 +435,7 @@
   "signals": [
     {"id": "RAM2500_FUEL_RAIL_P_TGT", "path": "Fuel", "fmt": { "len": 16, "max": 65.535, "div": 1000, "unit": "unknown" }, "name": "Fuel rail pressure, target"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1F59"}, "freq": 1, "dbgfilter": { "to": 2020, "from": 2022 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1F59"}, "freq": 1, "dbgfilter": { "to": 2020, "years": [2022], "from": 2024 },
   "signals": [
     {"id": "RAM2500_WASTEGATE_POS_SENS", "path": "Engine", "fmt": { "len": 16, "max": 319.8107, "mul": 61, "div": 12500, "unit": "volts" }, "name": "Wastegate position sensor"}
   ]},
