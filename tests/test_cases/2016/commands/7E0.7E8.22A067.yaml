@@ -1,0 +1,5 @@
+command_id: 7E0.7E8.22A067
+test_cases:
+- expected_values:
+    RAM2500_FUEL_RAIL_P: 328
+  response: 7E80762A0670000A450

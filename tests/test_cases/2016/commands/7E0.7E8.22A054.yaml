@@ -1,0 +1,5 @@
+command_id: 7E0.7E8.22A054
+test_cases:
+- expected_values:
+    RAM2500_BOOST_P: 0
+  response: 7E80562A0540000

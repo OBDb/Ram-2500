@@ -1,0 +1,5 @@
+command_id: 7E0.7E8.22A0C8
+test_cases:
+- expected_values:
+    RAM2500_EXH_GAS_T_5_SCR_CAT: 182
+  response: 7E80762A0C800000096
