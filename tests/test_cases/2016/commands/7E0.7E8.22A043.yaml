@@ -1,0 +1,5 @@
+command_id: 7E0.7E8.22A043
+test_cases:
+- expected_values:
+    RAM2500_FLI_AVG: 121
+  response: 7E80562A0437900

@@ -1,0 +1,5 @@
+command_id: 7E0.7E8.22B028
+test_cases:
+- expected_values:
+    RAM2500_TQ_CONV_SLIP_VAR_1: 0.1125
+  response: 7E80562B0280008

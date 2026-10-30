@@ -1,0 +1,5 @@
+command_id: 7E0.7E8.22A0BD
+test_cases:
+- expected_values:
+    RAM2500_EXH_GAS_T_1_DOC: 132
+  response: 7E80762A0BD00000064

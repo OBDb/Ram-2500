@@ -1,0 +1,6 @@
+command_id: 7E0.7E8.2117
+test_cases:
+- expected_values:
+    RAM2500_LINE_P: 58
+    RAM2500_LINE_P_DUTY: 21.97405
+  response: 7E807611738393A3A3C

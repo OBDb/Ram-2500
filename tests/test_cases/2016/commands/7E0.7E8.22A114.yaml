@@ -1,0 +1,5 @@
+command_id: 7E0.7E8.22A114
+test_cases:
+- expected_values:
+    RAM2500_AFTERTREATMENT_INT: 0
+  response: 7E80762A11400000000

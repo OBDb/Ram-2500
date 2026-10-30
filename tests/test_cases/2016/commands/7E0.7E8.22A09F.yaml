@@ -1,0 +1,5 @@
+command_id: 7E0.7E8.22A09F
+test_cases:
+- expected_values:
+    RAM2500_GEAR_CMD: 0
+  response: 7E80562A09F0000

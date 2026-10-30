@@ -1,0 +1,5 @@
+command_id: 7E0.7E8.22A006
+test_cases:
+- expected_values:
+    RAM2500_DEF_LEVEL: 0
+  response: 7E80762A00600000000
