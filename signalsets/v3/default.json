@@ -267,7 +267,7 @@
   "signals": [
     {"id": "RAM2500_IAT_01FF", "path": "Engine", "fmt": {"bix": 8, "len": 8, "max": 191, "min": -64, "add": -64, "unit": "celsius" }, "name": "Intake manifold air temperature"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "0227"}, "freq": 30, "dbgfilter": { "to": 2020, "years": [2022], "from": 2024 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "0227"}, "freq": 1, "dbgfilter": { "to": 2020, "years": [2022], "from": 2024 },
   "signals": [
     {"id": "RAM2500_FLI_INPUT", "path": "Fuel", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "Fuel level input", "suggestedMetric": "fuelTankLevel"}
   ]},
