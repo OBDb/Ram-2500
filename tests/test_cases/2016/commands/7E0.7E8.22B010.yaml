@@ -3,3 +3,6 @@ test_cases:
 - expected_values:
     RAM2500_ATF_T_VAR_1: 86.64062
   response: 7E80562B01015A9
+- expected_values:
+    RAM2500_ATF_T_VAR_1: 128.375
+  response: 7E80562B0102018

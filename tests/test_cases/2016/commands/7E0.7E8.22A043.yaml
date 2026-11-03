@@ -3,3 +3,6 @@ test_cases:
 - expected_values:
     RAM2500_FLI_AVG: 121
   response: 7E80562A0437900
+- expected_values:
+    RAM2500_FLI_AVG: 122
+  response: 7E80562A0437A80
