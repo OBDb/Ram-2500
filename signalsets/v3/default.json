@@ -379,7 +379,7 @@
   "signals": [
     {"id": "RAM2500_LOW_SIDE_ECT", "path": "Engine", "fmt": { "len": 8, "max": 191, "min": -64, "add": -64, "nullmin": -64, "unit": "celsius" }, "name": "Low side coolant temperature"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "14B1"}, "freq": 5, "dbgfilter": { "to": 2020, "from": 2022 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "14B1"}, "freq": 5, "dbgfilter": { "to": 2020, "years": [2022], "from": 2024 },
   "signals": [
     {"id": "RAM2500_THROTTLE_INLET_AIR_T", "path": "Engine", "fmt": {"bix": 8, "len": 8, "max": 191, "min": -64, "add": -64, "unit": "celsius" }, "name": "Throttle inlet air temperature filtered"}
   ]},
