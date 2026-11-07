@@ -1,6 +1,22 @@
 command_id: 740.4C0.22A0A1|fc=1
 test_cases:
 - expected_values:
+    RAM2500_TP_FL: 66
+    RAM2500_TP_FR: 66
+    RAM2500_TP_RL: 68
+    RAM2500_TP_RR: 63
+  response: |-
+    4C0100B62A0A142423F
+    4C02144FFFFFF66423F
+- expected_values:
+    RAM2500_TP_FL: 66
+    RAM2500_TP_FR: 66
+    RAM2500_TP_RL: 68
+    RAM2500_TP_RR: 64
+  response: |-
+    4C0100B62A0A1424240
+    4C02144FFFFFF664240
+- expected_values:
     RAM2500_TP_FL: 68
     RAM2500_TP_FR: 68
     RAM2500_TP_RL: 35
@@ -18,22 +34,6 @@ test_cases:
     4C02123FFFFFF604647
 - expected_values:
     RAM2500_TP_FL: 69
-    RAM2500_TP_FR: 66
-    RAM2500_TP_RL: 35
-    RAM2500_TP_RR: 69
-  response: |-
-    4C0100B62A0A1454245
-    4C02123FFFFFF624245
-- expected_values:
-    RAM2500_TP_FL: 69
-    RAM2500_TP_FR: 67
-    RAM2500_TP_RL: 36
-    RAM2500_TP_RR: 66
-  response: |-
-    4C0100B62A0A1454342
-    4C02124FFFFFF634342
-- expected_values:
-    RAM2500_TP_FL: 69
     RAM2500_TP_FR: 67
     RAM2500_TP_RL: 33
     RAM2500_TP_RR: 69
@@ -48,14 +48,6 @@ test_cases:
   response: |-
     4C0100B62A0A1454542
     4C02146FFFFFF004542
-- expected_values:
-    RAM2500_TP_FL: 69
-    RAM2500_TP_FR: 69
-    RAM2500_TP_RL: 70
-    RAM2500_TP_RR: 66
-  response: |-
-    4C0100B62A0A1454542
-    4C02146FFFFFF664542
 - expected_values:
     RAM2500_TP_FL: 78
     RAM2500_TP_FR: 74
