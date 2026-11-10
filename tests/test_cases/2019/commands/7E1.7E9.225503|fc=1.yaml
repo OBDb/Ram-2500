@@ -19,7 +19,7 @@ test_cases:
     RAM2500_GEAR_2: '8'
   response: '7E90462550308'
 - expected_values:
-    RAM2500_GEAR_2: REAR
+    RAM2500_GEAR_2: REVERSE
   response: 7E9046255030B
 - expected_values:
     RAM2500_GEAR_2: PARK
