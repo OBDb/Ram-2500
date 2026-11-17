@@ -41,7 +41,7 @@
     {"id": "RAM2500_TP_RL_F", "path": "Tires", "fmt": {           "len": 16, "max": 6553.5,             "div": 10,             "nullmax": 6553.5, "unit": "kilopascal" }, "name": "Rear left tire pressure",    "suggestedMetric": "rearLeftTirePressure"},
     {"id": "RAM2500_TT_RL_F", "path": "Tires", "fmt": {"bix": 32, "len": 8,  "max": 215,    "min": -40,            "add": -40, "nullmax": 215,    "unit": "celsius"    }, "name": "Rear left tire temperature"}
   ]},
-{ "hdr": "742", "rax": "4C2", "fcm1": true, "cmd": {"22": "A077"}, "freq": 15, "dbgfilter": { "to": 2013, "years": [2015], "from": 2017 },
+{ "hdr": "742", "rax": "4C2", "fcm1": true, "cmd": {"22": "A077"}, "freq": 15, "filter": { "to": 2018, "from": 2028 }, "dbgfilter": { "to": 2013, "years": [2015], "from": 2017 },
   "signals": [
     {"id": "RAM2500_FL_TIRE_P", "path": "Tires", "fmt": {"bix": 24, "len": 8, "max": 255, "nullmax": 255, "unit": "psi" }, "name": "Front left tire pressure",  "suggestedMetric": "frontLeftTirePressure"},
     {"id": "RAM2500_FR_TIRE_P", "path": "Tires", "fmt": {"bix": 32, "len": 8, "max": 255, "nullmax": 255, "unit": "psi" }, "name": "Front right tire pressure", "suggestedMetric": "frontRightTirePressure"},
